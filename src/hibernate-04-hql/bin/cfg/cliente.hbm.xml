@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+  <class name="modelo.Cliente" table="clientes">
+    <id name="idCliente" column="id_cliente" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+
+    <property name="nombre" not-null="true" />
+
+    <component name="direccion" class="modelo.Direccion">
+      <property name="ciudad" />
+      <property name="calle" not-null="true" />
+      <property name="codPostal" column="cod_postal" />
+    </component>
+
+    <property name="telefono" />
+
+    <one-to-one name="datosBancarios" class="modelo.DatosBancarios"
+      cascade="all" />
+
+    <set name="pedidos" cascade="all"> <!-- lazy="false"> -->
+      <key column="id_cliente" />
+      <one-to-many class="modelo.Pedido" />
+    </set>
+
+    <list name="facturas" cascade="all">
+      <key column="id_cliente" />
+      <index column="orden" />
+      <one-to-many class="modelo.Factura" />
+    </list>
+
+    <set name="comerciales" cascade="all" table="clientes_comerciales"> <!-- El 'all' es solo para simplificar. No deberiamos usarlo -->
+      <key column="id_cliente"></key>
+      <many-to-many class="modelo.Comercial" column="id_comercial" />
+    </set>
+
+  </class>
+
+</hibernate-mapping>
+
+
+
+
+
+

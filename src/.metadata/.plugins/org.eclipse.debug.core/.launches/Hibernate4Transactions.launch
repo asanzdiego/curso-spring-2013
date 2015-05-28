@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/spring-hibernate-4-tx/src/main/java/asanzdiego/spring/hibernate/Hibernate4Transactions.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="asanzdiego.spring.hibernate.Hibernate4Transactions"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="spring-hibernate-4-tx"/>
+</launchConfiguration>

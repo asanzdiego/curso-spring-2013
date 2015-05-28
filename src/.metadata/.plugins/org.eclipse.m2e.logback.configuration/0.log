@@ -1,0 +1,663 @@
+2013-11-19 11:41:39,126 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:41:50,498 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for asanzdiego:spring-sample-core-security:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2013-11-19 11:42:00,333 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:42:00,401 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for asanzdiego:spring-sample-core:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2013-11-19 11:42:07,528 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:42:12,634 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:42:15,778 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:42:19,317 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:42:22,200 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:42:28,407 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:42:30,914 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:42:32,019 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:42:34,541 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:42:39,544 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:42:41,672 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:42:43,407 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:42:44,379 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:42:45,446 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:42:47,654 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:42:49,526 [Worker-1] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:44:14,054 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:44:20,139 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:20,168 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:44:20,242 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:20,243 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/src/test/resources
+2013-11-19 11:44:21,593 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:44:22,008 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:22,020 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:44:22,069 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:22,071 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/src/test/resources
+2013-11-19 11:44:40,416 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:44:41,801 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:41,813 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:44:41,840 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:41,842 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:44:42,506 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:44:43,581 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:43,582 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/main/resources
+2013-11-19 11:44:43,635 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:43,635 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/test/resources
+2013-11-19 11:44:44,401 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:44:45,171 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:45,172 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/main/resources
+2013-11-19 11:44:45,177 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:45,178 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/test/resources
+2013-11-19 11:44:45,451 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:44:46,050 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:46,051 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/main/resources
+2013-11-19 11:44:46,057 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:46,057 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/test/resources
+2013-11-19 11:44:46,454 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:44:47,354 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:47,355 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/main/resources
+2013-11-19 11:44:47,360 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:47,361 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/test/resources
+2013-11-19 11:44:47,867 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:44:48,439 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:48,440 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-19 11:44:48,454 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:48,455 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-19 11:44:48,811 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:44:49,484 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:49,484 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/main/resources
+2013-11-19 11:44:49,490 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:49,491 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/test/resources
+2013-11-19 11:44:50,060 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:44:50,907 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:50,907 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-19 11:44:50,933 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:44:50,934 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-19 11:44:51,704 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:44:55,506 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:55,510 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:44:55,533 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:44:55,536 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:45:31,637 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:45:32,206 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:45:36,986 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:45:36,987 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/main/resources
+2013-11-19 11:45:37,006 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:45:37,006 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/test/resources
+2013-11-19 11:45:41,476 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:45:41,610 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for asanzdiego:spring-sample-core-security:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2013-11-19 11:45:45,035 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:45:45,056 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for asanzdiego:spring-sample-core:jar:0.0.1-SNAPSHOT is missing, no dependency information available
+2013-11-19 11:45:46,809 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:45:48,819 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:45:51,184 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:45:53,382 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:45:54,997 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:45:57,124 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:45:58,491 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:45:59,374 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:46:01,100 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:46:04,765 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:46:06,671 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:46:08,956 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:46:10,440 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:46:11,592 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:46:13,269 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:46:14,097 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:46:14,894 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:46:15,139 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:46:15,711 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:46:16,968 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:46:18,031 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:46:18,523 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:18,563 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:46:18,579 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:18,580 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/src/test/resources
+2013-11-19 11:46:18,968 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:46:19,671 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:19,683 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:46:19,691 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:19,693 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/src/test/resources
+2013-11-19 11:46:19,988 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:46:22,456 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:22,486 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:46:22,555 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:22,556 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:46:23,067 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:46:23,613 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:23,621 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/main/resources
+2013-11-19 11:46:23,701 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:23,702 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/test/resources
+2013-11-19 11:46:24,307 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:46:25,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:25,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/main/resources
+2013-11-19 11:46:25,457 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:25,458 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/test/resources
+2013-11-19 11:46:25,489 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:46:26,788 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:26,788 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/main/resources
+2013-11-19 11:46:26,815 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:26,816 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/test/resources
+2013-11-19 11:46:26,999 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:46:28,446 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:28,446 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/main/resources
+2013-11-19 11:46:28,451 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:28,452 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/test/resources
+2013-11-19 11:46:29,840 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:29,841 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-19 11:46:29,892 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:29,905 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-19 11:46:30,198 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:46:30,748 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:30,748 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/main/resources
+2013-11-19 11:46:30,755 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:30,756 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/test/resources
+2013-11-19 11:46:31,357 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:46:32,027 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:32,028 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-19 11:46:32,045 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:32,046 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-19 11:46:32,810 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:32,810 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/main/resources
+2013-11-19 11:46:32,820 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:32,830 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/test/resources
+2013-11-19 11:46:32,914 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:46:33,688 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:33,704 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:46:33,738 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:33,749 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:46:34,144 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:46:34,766 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:46:36,166 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:36,166 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/main/resources
+2013-11-19 11:46:36,171 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:36,186 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/test/resources
+2013-11-19 11:46:37,205 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:46:38,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:38,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/main/resources
+2013-11-19 11:46:38,744 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:46:38,768 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/test/resources
+2013-11-19 11:46:39,812 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:46:42,943 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:42,950 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:46:42,964 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:42,967 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:46:44,078 [Worker-8] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:46:48,374 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:48,423 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:46:48,467 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:46:48,486 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:46:49,455 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:46:51,517 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:46:53,634 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:46:54,790 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:46:56,131 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:46:57,500 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:46:59,357 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:47:01,071 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:47:01,597 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:47:02,371 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:47:05,181 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:47:07,068 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:47:08,325 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:47:09,148 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:47:09,660 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:47:13,715 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:47:14,182 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-19 11:47:14,689 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.common:SpringExamples:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/pom.xml.
+2013-11-19 11:47:17,921 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-19 11:47:18,938 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-19 11:47:19,684 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-19 11:47:20,678 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-19 11:47:21,761 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-19 11:47:23,273 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-19 11:47:24,767 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-19 11:47:25,584 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-19 11:47:26,720 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-19 11:47:29,150 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-19 11:47:30,704 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-19 11:47:32,576 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-19 11:47:34,114 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-19 11:47:35,942 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-19 11:47:37,047 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:37,048 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/main/resources
+2013-11-19 11:47:37,060 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:37,061 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/test/resources
+2013-11-19 11:47:38,315 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:38,316 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/main/resources
+2013-11-19 11:47:38,335 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:38,335 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/test/resources
+2013-11-19 11:47:38,959 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:38,997 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:47:39,003 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:39,025 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:47:39,641 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:39,662 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 11:47:39,668 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:39,687 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 11:47:47,705 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:47,706 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:47,724 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:47,725 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/src/test/resources
+2013-11-19 11:47:47,867 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:47,868 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:47,886 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:47,887 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-03-aop-proxy/src/test/resources
+2013-11-19 11:47:48,017 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,018 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:48,023 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,024 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:48,185 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,186 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/main/resources
+2013-11-19 11:47:48,225 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,226 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/test/resources
+2013-11-19 11:47:48,315 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,316 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/main/resources
+2013-11-19 11:47:48,328 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,328 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/test/resources
+2013-11-19 11:47:48,452 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,453 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/main/resources
+2013-11-19 11:47:48,462 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,463 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/test/resources
+2013-11-19 11:47:48,544 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,544 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/main/resources
+2013-11-19 11:47:48,575 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,575 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/test/resources
+2013-11-19 11:47:48,676 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,676 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-19 11:47:48,710 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,711 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-19 11:47:48,839 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,840 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/main/resources
+2013-11-19 11:47:48,855 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,856 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/test/resources
+2013-11-19 11:47:48,978 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:48,979 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-19 11:47:48,996 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:49,005 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-19 11:47:49,264 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:49,277 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/main/resources
+2013-11-19 11:47:49,283 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:49,283 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/test/resources
+2013-11-19 11:47:49,546 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:49,568 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:49,642 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:49,644 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:49,936 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:49,936 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/main/resources
+2013-11-19 11:47:49,966 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:49,966 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/test/resources
+2013-11-19 11:47:50,215 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:50,216 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/main/resources
+2013-11-19 11:47:50,240 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-19 11:47:50,241 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/test/resources
+2013-11-19 11:47:50,505 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:50,528 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:50,575 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:50,576 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:50,957 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:50,959 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 11:47:50,992 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 11:47:51,000 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 14:09:23,415 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:23,511 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 14:09:23,553 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:23,556 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 14:09:40,486 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:40,577 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 14:09:40,654 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:40,678 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 14:09:42,863 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:42,879 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-19 14:09:42,895 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:09:42,907 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-19 14:12:21,803 [Worker-5] ERROR o.e.m.c.i.p.r.ProjectRegistryRefreshJob - Resource '/spring-jdbc/pom.xml' does not exist.
+org.eclipse.core.internal.resources.ResourceException: Resource '/spring-jdbc/pom.xml' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341) ~[na:na]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215) ~[na:na]
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:846) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:231) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:226) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProject(ProjectRegistryManager.java:633) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:368) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:328) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-19 14:12:23,380 [Worker-5] ERROR o.e.m.c.i.p.r.ProjectRegistryRefreshJob - Resource '/spring-mvc-rest/pom.xml' does not exist.
+org.eclipse.core.internal.resources.ResourceException: Resource '/spring-mvc-rest/pom.xml' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:341) ~[na:na]
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:215) ~[na:na]
+	at org.eclipse.core.internal.resources.Resource.deleteMarkers(Resource.java:846) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:231) ~[na:na]
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.deleteMarkers(MavenMarkerManager.java:226) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProject(ProjectRegistryManager.java:633) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:368) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:328) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-19 14:12:24,565 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:12:24,587 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 14:12:24,604 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:12:24,606 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 14:12:24,705 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:12:24,706 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-19 14:12:24,717 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-19 14:12:24,719 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-20 18:46:09,619 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-20 18:46:09,615 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-2013-11:spring-2013-11--01--simple:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-2013-11--01--simple/pom.xml.
+2013-11-20 18:46:17,480 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:17,519 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-20 18:46:17,563 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:17,587 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-20 18:46:18,077 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-aop:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/pom.xml.
+2013-11-20 18:46:18,369 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:18,370 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/main/resources
+2013-11-20 18:46:18,376 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:18,376 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-aop/src/test/resources
+2013-11-20 18:46:19,027 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/pom.xml.
+2013-11-20 18:46:20,145 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:20,146 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/main/resources
+2013-11-20 18:46:20,152 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:46:20,183 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core/src/test/resources
+2013-11-20 18:46:22,217 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mkyong.core:Spring3Example:1.0-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/pom.xml.
+2013-11-20 18:46:23,961 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:46:23,968 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-20 18:46:24,021 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:46:24,022 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj/src/test/resources
+2013-11-20 18:51:05,693 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-20 18:51:10,922 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-20 18:51:18,027 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:51:18,040 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-20 18:51:18,069 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:51:18,089 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-20 18:51:21,902 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-20 18:51:25,636 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest-core:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/pom.xml.
+2013-11-20 18:51:26,423 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:51:26,467 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-20 18:51:26,489 [Worker-18] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:51:26,497 [Worker-18] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-20 18:51:27,147 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-20 18:52:18,411 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:52:18,411 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/main/resources
+2013-11-20 18:52:18,417 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 18:52:18,441 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest-core/src/test/resources
+2013-11-20 18:52:19,089 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:52:19,094 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-20 18:52:19,107 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-20 18:52:19,110 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-20 19:23:38,987 [Worker-19] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/pom.xml.
+2013-11-20 19:23:40,211 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 19:23:40,211 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/main/resources
+2013-11-20 19:23:40,217 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-20 19:23:40,217 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc/src/test/resources
+2013-11-21 09:46:39,610 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-02-aop-aspectj-bis-maven:spring-02-aop-aspectj-bis-maven:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj-bis-maven/pom.xml.
+2013-11-21 09:46:40,093 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-02-aop-aspectj-bis-maven/src/main/java
+2013-11-21 09:46:40,095 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-02-aop-aspectj-bis-maven/src/main/resources
+2013-11-21 09:46:40,096 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /spring-02-aop-aspectj-bis-maven/src/test/java
+2013-11-21 09:46:40,097 [Worker-29] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /spring-02-aop-aspectj-bis-maven/src/test/resources
+2013-11-21 09:46:40,852 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-02-aop-aspectj-bis-maven:spring-02-aop-aspectj-bis-maven:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj-bis-maven/pom.xml.
+2013-11-21 09:46:41,367 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:46:41,369 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:46:41,375 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:46:41,377 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:46:42,473 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-02-aop-aspectj-bis-maven:spring-02-aop-aspectj-bis-maven:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj-bis-maven/pom.xml.
+2013-11-21 09:46:42,629 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:46:42,630 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:46:42,636 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:46:42,637 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:47:21,703 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:47:21,706 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:47:21,711 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:47:21,712 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:47:38,640 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:47:38,646 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 09:47:38,670 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:47:38,671 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:51:14,719 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: spring-02-aop-aspectj-bis-maven:spring-02-aop-aspectj-bis-maven:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-02-aop-aspectj-bis-maven/pom.xml.
+2013-11-21 09:51:15,126 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:51:15,127 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:51:15,133 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:51:15,134 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:51:16,631 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:51:16,635 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 09:51:16,642 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:51:16,644 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:52:22,983 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:52:22,987 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 09:52:23,009 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:52:23,011 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:52:43,541 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:52:43,544 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 09:52:43,550 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:52:43,551 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:53:13,134 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:53:13,138 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 09:53:13,144 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 09:53:13,146 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-21 09:59:33,887 [Worker-27] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-bd:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/pom.xml.
+2013-11-21 09:59:34,791 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 09:59:34,795 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-21 09:59:34,800 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 09:59:34,806 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-21 10:01:01,497 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/pom.xml.
+2013-11-21 10:01:02,268 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/pom.xml.
+2013-11-21 10:01:03,334 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/pom.xml.
+2013-11-21 10:01:05,779 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-hibernate:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/pom.xml.
+2013-11-21 10:01:07,055 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,055 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/main/resources
+2013-11-21 10:01:07,071 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,072 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/test/resources
+2013-11-21 10:01:07,169 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,170 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/main/resources
+2013-11-21 10:01:07,175 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,176 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/test/resources
+2013-11-21 10:01:07,410 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,411 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/main/resources
+2013-11-21 10:01:07,417 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,424 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4/src/test/resources
+2013-11-21 10:01:07,498 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,498 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-21 10:01:07,503 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:07,504 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-21 10:01:16,429 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-core-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/pom.xml.
+2013-11-21 10:01:18,300 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc/pom.xml.
+2013-11-21 10:01:20,785 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-sample-mvc-security:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-mvc-security/pom.xml.
+2013-11-21 10:01:27,475 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:27,476 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/main/resources
+2013-11-21 10:01:27,495 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:01:27,519 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-sample-core-security/src/test/resources
+2013-11-21 10:01:27,747 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 10:01:27,763 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-21 10:01:27,815 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 10:01:27,819 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 10:01:28,055 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 10:01:28,063 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-21 10:01:28,089 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 10:01:28,101 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 10:12:43,622 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:12:43,622 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-21 10:12:43,627 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:12:43,627 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-21 10:17:03,099 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:17:03,125 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-21 10:17:03,134 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:17:03,164 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-21 10:26:16,530 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:26:16,559 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-21 10:26:16,568 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:26:16,581 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-21 10:28:15,393 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:28:15,394 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/main/resources
+2013-11-21 10:28:15,399 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 10:28:15,400 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-jdbc-tx/src/test/resources
+2013-11-21 11:15:06,681 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 11:15:06,681 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-21 11:15:06,698 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 11:15:06,717 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-21 17:03:50,964 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 17:03:51,008 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/main/resources
+2013-11-21 17:03:51,027 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 17:03:51,044 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3/src/test/resources
+2013-11-21 17:03:52,824 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 17:03:52,825 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/main/resources
+2013-11-21 17:03:52,845 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-21 17:03:52,913 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-3-tx/src/test/resources
+2013-11-21 17:03:56,500 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 17:03:56,586 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-21 17:03:56,662 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 17:03:56,672 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-21 17:04:00,372 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 17:04:00,383 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-21 17:04:00,407 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-21 17:04:00,410 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-25 18:49:27,743 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-25 18:49:27,777 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/main/resources
+2013-11-25 18:49:27,789 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2013-11-25 18:49:27,806 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-hibernate-4-tx/src/test/resources
+2013-11-26 17:08:43,890 [Worker-7] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+org.eclipse.core.runtime.CoreException: Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:43,941 [Worker-7] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+org.eclipse.core.runtime.CoreException: Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:43,982 [Worker-7] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+org.eclipse.core.runtime.CoreException: Launch configuration Programa (1) references closed project spring-02-aop-aspectj-bis-maven
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2141) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:246) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:47,080 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:47,087 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:47,102 [Worker-11] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+org.eclipse.core.runtime.CoreException: Launch configuration Hibernate4Transactions references closed project spring-hibernate-4-tx
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2141) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:246) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:729) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:852) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.2.0.20120903-1050.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53) [org.eclipse.core.jobs_3.5.300.v20120622-204750.jar:na]
+2013-11-26 17:08:49,814 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:08:49,838 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-26 17:08:49,916 [Worker-8] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:08:49,926 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-26 17:09:07,328 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:09:07,338 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-26 17:09:07,373 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:09:07,376 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-26 17:09:07,797 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:09:07,802 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-26 17:09:07,812 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-26 17:09:07,815 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 13:07:51,783 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:51,838 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-27 13:07:51,880 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:51,883 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 13:07:55,078 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:55,171 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-27 13:07:55,191 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:55,195 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 13:07:56,425 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:56,430 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-27 13:07:56,440 [Worker-10] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:07:56,443 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 13:11:32,856 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-27 13:11:39,354 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:11:39,413 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-27 13:11:39,427 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 13:11:39,435 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 14:57:01,974 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: asanzdiego:spring-mvc-rest:0.0.1-SNAPSHOT @ /home/adolfo/Curro/cursos/curso-spring-2013/workspace/spring-mvc-rest/pom.xml.
+2013-11-27 14:57:39,733 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 14:57:39,778 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2013-11-27 14:57:39,969 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 14:57:40,002 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-11-27 14:58:13,449 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 14:58:13,479 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-11-27 14:58:13,495 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-11-27 14:58:13,497 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+  default-lazy-init="true">
+
+  <bean id="miPlantillaMayorEdad" abstract="true" class="Persona">
+    <property name="edad" value="18" />
+  </bean>
+  
+  <bean id="aquellaPersona" class="Persona" p:nombre="lucio"
+    p:edad="88" p:altura="3" p:pareja-ref="miPersona" />
+
+  <bean id="aquellaOtraPersona" parent="miPlantillaMayorEdad"
+    init-method="creacion" destroy-method="destruccion" lazy-init="true">
+    <property name="nombre" value="antonio" />
+    <property name="altura" value="8" />
+  </bean>
+
+  <bean id="miDao" factory-bean="miFabrica" factory-method="getDao" />
+
+  <bean id="miFabrica" class="FabricaPersonaDao">
+    <property name="dataSource">
+      <bean class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql:///clase" />
+        <property name="username" value="clase" />
+        <property name="password" value="clase" />
+      </bean>
+    </property>
+  </bean>
+  
+</beans>

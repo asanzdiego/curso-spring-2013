@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+  <class name="modelo.Comercial" table="comerciales">
+    <id name="idComercial" column="id_comercial" unsaved-value="0">
+      <generator class="identity" />
+    </id>
+
+    <property name="nombre" />
+
+    <set name="clientes" cascade="all" table="clientes_comerciales">
+      <key column="id_comercial" />
+      <many-to-many class="modelo.Cliente" column="id_cliente" />
+    </set>
+  </class>
+
+</hibernate-mapping>

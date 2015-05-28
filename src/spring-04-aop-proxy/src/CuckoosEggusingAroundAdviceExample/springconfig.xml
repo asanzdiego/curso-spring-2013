@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC  "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <!--CONFIG -->
+  <bean id="businesslogicbean" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="proxyInterfaces">
+      <value>CuckoosEggusingAroundAdviceExample.IBusinessLogic</value>
+    </property>
+    <property name="target">
+      <ref local="beanTarget" />
+    </property>
+    <property name="interceptorNames">
+      <list>
+        <value>theCuckoosEggAdvisor</value>
+      </list>
+    </property>
+  </bean>
+
+  <bean id="businesslogicbean2" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <property name="proxyInterfaces">
+      <value>CuckoosEggusingAroundAdviceExample.IBusinessLogic2</value>
+    </property>
+    <property name="target">
+      <ref local="beanTarget2" />
+    </property>
+    <property name="interceptorNames">
+      <list>
+        <value>theCuckoosEgg2Advisor</value>
+      </list>
+    </property>
+  </bean>
+  
+  <!--CLASS -->
+  <bean id="beanTarget" class="CuckoosEggusingAroundAdviceExample.BusinessLogic" />
+  <bean id="beanTarget2" class="CuckoosEggusingAroundAdviceExample.BusinessLogic2" />
+  
+  <!--ADVISOR -->
+   <!--Note: An advisor assembles pointcuts and advice -->
+  <bean id="theCuckoosEggAdvisor"
+    class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice">
+      <ref local="theReplacementFeaturePart1Advice" />
+    </property>
+    <property name="pattern">
+      <value>CuckoosEggusingAroundAdviceExample.IBusinessLogic.*</value>
+    </property>
+  </bean>
+
+  <bean id="theCuckoosEgg2Advisor"
+    class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    <property name="advice">
+      <ref local="theReplacementFeaturePart2Advice" />
+    </property>
+    <property name="pattern">
+      <value>CuckoosEggusingAroundAdviceExample.IBusinessLogic2.bar</value>
+    </property>
+  </bean>
+  
+  <!--ADVICE -->
+  <bean id="theReplacementFeaturePart1Advice" class="CuckoosEggusingAroundAdviceExample.CuckoosEgg" />
+  <bean id="theReplacementFeaturePart2Advice" class="CuckoosEggusingAroundAdviceExample.CuckoosEgg" />
+</beans>

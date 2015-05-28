@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="generator" content="pandoc" />
+  <meta name="description" content="Spring MVC" />
+  <meta name="author" content="Adolfo Sanz De Diego" />
+  <meta name="copyright" content="Spring MVC - Adolfo Sanz De Diego -  Noviembre 2013" /> 
+  <title>Spring MVC</title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+
+  <!-- deck core css -->
+  <link rel="stylesheet" href="./css/deck-core.css">
+
+  <!-- deck extensions css -->
+  <link rel="stylesheet" href="./css/deck-extension/goto.css">
+  <link rel="stylesheet" href="./css/deck-extension/hash.css">
+  <link rel="stylesheet" href="./css/deck-extension/menu.css">
+  <link rel="stylesheet" href="./css/deck-extension/navigation.css">
+  <link rel="stylesheet" href="./css/deck-extension/status.css">
+  <link rel="stylesheet" href="./css/deck-extension/pointer.css">
+
+  <!-- deck slide theme css -->
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-theme/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/mnml.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/neon.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/swiss.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  -->
+
+  <!-- deck slide transition css -->
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-transition/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/fade.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/horizontal.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/vertical.css">
+  -->
+
+  <!-- custom css just for this page -->
+  <link rel="stylesheet" href="./css/deck-custom.css">
+
+  <!-- modernizr deck js  -->
+  <script src="./js/modernizr-custom.js"></script>
+
+</head>
+<body class="deck-container">
+<section class="slide">
+  <h2 id="titlepage">Spring MVC</h2>
+  <h3 id="documentauthor">Adolfo Sanz De Diego</h3>
+  <h4 id="documentdate">Noviembre 2013</h4>
+</section>
+
+<section id="creditos" class="titleslide slide level1"><h1><span class="header-section-number">1</span> Creditos</h1></section><section id="pronoide" class="slide level2">
+<h2><span class="header-section-number">1.1</span> Pronoide</h2>
+<figure>
+<img src="../img/logo-pronoide.png" alt="Pronoide" /><figcaption>Pronoide</figcaption>
+</figure>
+<ul>
+<li><p>Pronoide consolida sus servicios de formación superando las <strong>22.000 horas impartidas</strong> en más de 500 cursos (Diciembre 2011)</p></li>
+<li><p>En la vorágine de <strong>tecnologías y marcos de trabajo existentes</strong>, una empresa dedica demasiado esfuerzo en analizar, comparar y finalmente decidir cuáles son los pilares sobre los que construir sus proyectos.</p></li>
+<li><p>Nuestros Servicios de Formación permiten ayudarle en esta tarea, transfiriéndoles nuestra <strong>experiencia real de más de 10 años</strong>.</p></li>
+</ul>
+</section><section id="autor" class="slide level2">
+<h2><span class="header-section-number">1.2</span> Autor</h2>
+<ul>
+<li><p><strong>Adolfo Sanz De Diego</strong></p></li>
+<li><p>Mi nick: <strong>asanzdiego</strong></p></li>
+<li><p>AboutMe: <strong><a href="http://about.me/asanzdiego">http://about.me/asanzdiego</a></strong></p>
+<ul>
+<li>GitHub: <a href="http://github.com/asanzdiego/">http://github.com/asanzdiego/</a></li>
+<li>Twitter: <a href="http://twitter.com/asanzdiego">http://twitter.com/asanzdiego</a></li>
+<li>Blog: <a href="http://asanzdiego.blogspot.com.es">http://asanzdiego.blogspot.com.es</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">http://www.linkedin.com/in/asanzdiego</a></li>
+</ul></li>
+</ul>
+</section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">1.3</span> Licencia</h2>
+<ul>
+<li>Estas <strong>transparencias</strong> están bajo una licencia:
+<ul>
+<li>Creative Commons Reconocimiento-CompartirIgual 3.0 <a href="http://creativecommons.org/licenses/by-sa/3.0/es/">http://creativecommons.org/licenses/by-sa/3.0/es/</a></li>
+</ul></li>
+<li>El <strong>código fuente</strong> de los programas están bajo una licencia:
+<ul>
+<li>GPL 3.0 <a href="http://www.viti.es/gnu/licenses/gpl.html">http://www.viti.es/gnu/licenses/gpl.html</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="introducción" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Introducción</h1></section><section id="características" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Características</h2>
+<ul>
+<li>Clara separación de roles.</li>
+<li>Configuración potente tanto del framework como de la aplicación.</li>
+<li>Adaptable, no intrusivo, y flexible.</li>
+<li>Clases de negocio reutilizables.</li>
+<li>Validación y conversión personalizable.</li>
+<li>Mapeo del controlador y de la vista personalizable.</li>
+<li>Tansferencia flexible de datos.</li>
+<li>Soporta internacionalización.</li>
+<li>Permite usar JSP, con o sin etiquetas de Spring, JSTL, velocity.</li>
+</ul>
+</section><section id="esquema" class="slide level2">
+<h2><span class="header-section-number">2.2</span> Esquema</h2>
+<figure>
+<img src="../img/spring-mvc.png" alt="Spring MVC" /><figcaption>Spring MVC</figcaption>
+</figure>
+</section>
+<section id="configuración" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Configuración</h1></section><section id="web.xml" class="slide level2">
+<h2><span class="header-section-number">3.1</span> web.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;web-app&gt;</span>
+
+    <span class="kw">&lt;listener&gt;</span>
+        <span class="kw">&lt;listener-class&gt;</span>org.springframework.web.context.ContextLoaderListener<span class="kw">&lt;/listener-class&gt;</span>
+    <span class="kw">&lt;/listener&gt;</span>
+
+    <span class="kw">&lt;servlet&gt;</span>
+        <span class="kw">&lt;servlet-name&gt;</span>appServlet<span class="kw">&lt;/servlet-name&gt;</span>
+        <span class="kw">&lt;servlet-class&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="kw">&lt;/servlet-class&gt;</span>
+        <span class="kw">&lt;init-param&gt;</span>
+            <span class="kw">&lt;param-name&gt;</span>contextConfigLocation<span class="kw">&lt;/param-name&gt;</span>
+            <span class="kw">&lt;param-value&gt;</span>/WEB-INF/spring/appServlet/servlet-context.xml<span class="kw">&lt;/param-value&gt;</span>
+        <span class="kw">&lt;/init-param&gt;</span>
+        <span class="kw">&lt;load-on-startup&gt;</span>1<span class="kw">&lt;/load-on-startup&gt;</span>
+    <span class="kw">&lt;/servlet&gt;</span>
+
+    <span class="kw">&lt;servlet-mapping&gt;</span>
+        <span class="kw">&lt;servlet-name&gt;</span>appServlet<span class="kw">&lt;/servlet-name&gt;</span>
+        <span class="kw">&lt;url-pattern&gt;</span>/<span class="kw">&lt;/url-pattern&gt;</span>
+    <span class="kw">&lt;/servlet-mapping&gt;</span>
+
+<span class="kw">&lt;/web-app&gt;</span></code></pre>
+</section><section id="servlet-context.xml" class="slide level2">
+<h2><span class="header-section-number">3.2</span> servlet-context.xml</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;beans&gt;</span>
+
+    <span class="co">&lt;!-- Enables the Spring MVC @Controller programming model --&gt;</span>
+    <span class="kw">&lt;annotation-driven</span> <span class="kw">/&gt;</span>
+
+    <span class="co">&lt;!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory --&gt;</span>
+    <span class="kw">&lt;beans:bean</span><span class="ot"> class=</span><span class="st">&quot;org.springframework.web.servlet.view.InternalResourceViewResolver&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;beans:property</span><span class="ot"> name=</span><span class="st">&quot;prefix&quot;</span><span class="ot"> value=</span><span class="st">&quot;/WEB-INF/views/&quot;</span> <span class="kw">/&gt;</span>
+        <span class="kw">&lt;beans:property</span><span class="ot"> name=</span><span class="st">&quot;suffix&quot;</span><span class="ot"> value=</span><span class="st">&quot;.jsp&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;/beans:bean&gt;</span>
+
+    <span class="kw">&lt;context:component-scan</span><span class="ot"> base-package=</span><span class="st">&quot;my.package.my.app&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;/beans&gt;</span></code></pre>
+</section><section id="vía-rápida" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Vía rápida</h2>
+<ul>
+<li>En el <strong>STS</strong> (Spring Tool Suite):
+<ul>
+<li>New &gt; Spring Template Project &gt; Spring MVC Project</li>
+</ul></li>
+</ul>
+</section><section id="mapping-requests" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Mapping Requests</h2>
+<ul>
+<li>By path</li>
+<li>By path pattern</li>
+<li>By path and method</li>
+<li>By path, method, and presence of parameter</li>
+<li>By path, method, and not presence of parameter</li>
+<li>By presence of header</li>
+<li>By absence of header</li>
+</ul>
+</section>
+<section id="apis-para-qué" class="titleslide slide level1"><h1><span class="header-section-number">4</span> APIs ¿Para qué?</h1></section><section id="aplicación-estándar" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Aplicación estándar</h2>
+<figure>
+<img src="../img/esquema-api-rest-01.png" />
+</figure>
+</section><section id="introducimos-api" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Introducimos API</h2>
+<figure>
+<img src="../img/esquema-api-rest-02.png" />
+</figure>
+</section><section id="separación-roles" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Separación Roles</h2>
+<figure>
+<img src="../img/esquema-api-rest-03.png" />
+</figure>
+</section><section id="y-ahora-qué" class="slide level2">
+<h2><span class="header-section-number">4.4</span> ¿Y ahora qué?</h2>
+<figure>
+<img src="../img/esquema-api-rest-04.png" />
+</figure>
+</section><section id="servicios-externos" class="slide level2">
+<h2><span class="header-section-number">4.5</span> Servicios externos</h2>
+<figure>
+<img src="../img/esquema-api-rest-05.png" />
+</figure>
+</section><section id="apps-clientes" class="slide level2">
+<h2><span class="header-section-number">4.6</span> Apps clientes</h2>
+<figure>
+<img src="../img/esquema-api-rest-06.png" />
+</figure>
+</section><section id="apps-de-servicios" class="slide level2">
+<h2><span class="header-section-number">4.7</span> Apps de servicios</h2>
+<figure>
+<img src="../img/esquema-api-rest-07.png" />
+</figure>
+</section><section id="apps-mixtas" class="slide level2">
+<h2><span class="header-section-number">4.8</span> Apps mixtas</h2>
+<figure>
+<img src="../img/esquema-api-rest-08.png" />
+</figure>
+</section><section id="plataforma" class="slide level2">
+<h2><span class="header-section-number">4.9</span> Plataforma</h2>
+<figure>
+<img src="../img/esquema-api-rest-09.png" />
+</figure>
+</section><section id="quien-expone-apis" class="slide level2">
+<h2><span class="header-section-number">4.10</span> ¿Quien expone APIs?</h2>
+<figure>
+<img src="../img/apis-1.png" />
+</figure>
+</section><section id="quien-expone-apis-1" class="slide level2">
+<h2><span class="header-section-number">4.11</span> ¿Quien expone APIs?</h2>
+<figure>
+<img src="../img/apis-2.png" />
+</figure>
+</section><section id="quien-expone-apis-2" class="slide level2">
+<h2><span class="header-section-number">4.12</span> ¿Quien expone APIs?</h2>
+<figure>
+<img src="../img/apis-3.png" />
+</figure>
+</section><section id="exponlas-tú" class="slide level2">
+<h2><span class="header-section-number">4.13</span> Exponlas tú</h2>
+<figure>
+<img src="../img/cup.png" />
+</figure>
+</section><section id="exponlas-tú-1" class="slide level2">
+<h2><span class="header-section-number">4.14</span> Exponlas tú</h2>
+<figure>
+<img src="../img/cup-relaxing.png" />
+</figure>
+</section><section id="exponlas-tú-2" class="slide level2">
+<h2><span class="header-section-number">4.15</span> Exponlas tú</h2>
+<figure>
+<img src="../img/cup-ecce-homo.png" />
+</figure>
+</section>
+<section id="apis-restful" class="titleslide slide level1"><h1><span class="header-section-number">5</span> APIs RESTful</h1></section><section id="qué-es-rest" class="slide level2">
+<h2><span class="header-section-number">5.1</span> ¿Qué es REST?</h2>
+<ul>
+<li><p>REST (<strong>Representational State Transfer</strong>) es una técnica de arquitectura de software para sistemas hipermedia distribuidos como la World Wide Web.</p></li>
+<li><p>En REST una <strong>URL</strong> (Uniform Resource Locator) representa un <strong>recurso</strong>.</p></li>
+<li><p>Se puede acceder al recurso o modificarlo mediante los <strong>métodos del protocolo HTTP</strong>:</p>
+<pre><code>GET, POST, PUT, DELETE</code></pre></li>
+</ul>
+</section><section id="ejemplo-api" class="slide level2">
+<h2><span class="header-section-number">5.2</span> Ejemplo API</h2>
+<ul>
+<li><p><strong>http://myhost.com/talk</strong></p>
+<ul>
+<li>GET &gt; Devuelve todas las charlas.</li>
+<li>POST &gt; Crear una nueva charla.</li>
+</ul></li>
+<li><p><strong>http://myhost.com/talk/123</strong></p>
+<ul>
+<li>GET &gt; Devuelve la charla con id=123</li>
+<li>PUT &gt; Actualiza la charla con id=123</li>
+<li>DELETE &gt; Borra la charla con id=123</li>
+</ul></li>
+</ul>
+</section><section id="manejo-de-errores" class="slide level2">
+<h2><span class="header-section-number">5.3</span> Manejo de errores</h2>
+<ul>
+<li><p><strong>Se pueden utilizar los errores del protocolo HTTP</strong>:</p>
+<ul>
+<li>200 Successful</li>
+<li>201 Created</li>
+<li>202 Accepted</li>
+<li>301 Moved Permanently</li>
+<li>400 Bad Request</li>
+<li>401 Unauthorised</li>
+<li>402 Payment Required</li>
+<li>403 Forbidden</li>
+<li>404 Not Found</li>
+<li>405 Method Not Allowed</li>
+<li>500 Internal Server Error</li>
+<li>501 Not Implemented</li>
+</ul></li>
+</ul>
+</section><section id="por-qué-rest" class="slide level2">
+<h2><span class="header-section-number">5.4</span> ¿Por qué REST?</h2>
+<ul>
+<li>Es <strong>más sencillo</strong> (tanto la API como la implementación).</li>
+<li>Es <strong>más rápido</strong> (peticiones más lijeras que se pueden cachear).</li>
+<li>Es <strong>multiformato</strong> (HTML, XML, JSON, etc.).</li>
+<li>Se complementa muy bien con <strong>AJAX</strong>.</li>
+</ul>
+</section><section id="rest-vs-restful" class="slide level2">
+<h2><span class="header-section-number">5.5</span> REST vs RESTful</h2>
+<ul>
+<li><p>REST se refiere a un tipo de arquitectura de software</p>
+<ul>
+<li>Se utiliza como <strong>nombre</strong></li>
+<li>Se utiliza como por ejemplo: success = éxito.</li>
+</ul></li>
+<li><p>Si un servicio web es REST<strong>ful</strong> indica que implementa dicha arquitectura.</p>
+<ul>
+<li>Se utiliza como <strong>adjetivo</strong></li>
+<li>Se utiliza como por ejemplo: success<strong>ful</strong> = éxito<strong>so</strong>).</li>
+</ul></li>
+</ul>
+</section><section id="rest-vs-restful-1" class="slide level2">
+<h2><span class="header-section-number">5.6</span> REST vs RESTful</h2>
+<ul>
+<li><p>A veces el <strong>ful</strong> se confunde con <strong>full</strong> = completo.</p>
+<ul>
+<li><p>Y se refiere a los servicios web REST<strong>full</strong></p>
+<pre><code>Aquellos que implementan una API con
+todos los métodos del protócolo HTTP.</code></pre></li>
+<li><p>Y se refiere a los servicios web REST (<strong>sin el full</strong>)</p>
+<pre><code>Aquellos que NO implementan una API con
+todos los métodos del protócolo HTTP.</code></pre></li>
+</ul></li>
+</ul>
+</section>
+
+<!--footer id="footer">
+  <h4 class="author"> Adolfo Sanz De Diego  - Noviembre 2013</h4>
+</footer-->
+
+<!-- deck goto extension html -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck hash extension html -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- deck navigation extension html -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck status extension html -->
+<p class="deck-status">
+  <span class="deck-status-current"></span> / <span class="deck-status-total"></span>
+</p>
+
+<!-- deck core js  -->
+<script src="./js/jquery-1.7-min.js"></script>
+<script src="./js/deck-core.js"></script>
+
+<!-- deck extension js -->
+<script src="./js/deck-extension/goto.js"></script>
+<script src="./js/deck-extension/hash.js"></script>
+<script src="./js/deck-extension/menu.js"></script>
+<script src="./js/deck-extension/navigation.js"></script>
+<script src="./js/deck-extension/status.js"></script>
+<script src="./js/deck-extension/search.js"></script>
+<script src="./js/deck-extension/pointer.js"></script>
+
+<!-- Initialize the deck. -->
+<script src="./js/init-deck.js"></script>
+
+</body>
+</html>

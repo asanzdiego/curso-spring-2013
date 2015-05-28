@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+  http://www.springframework.org/schema/aop 
+  http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+
+  <aop:aspectj-autoproxy />
+
+  <!-- TARGET -->
+  <bean id="MiPersona" class="com.miempresa.ejemplo.aop.proxy.Hombre">
+    <property name="nombre" value="Alba"/>
+    <property name="edad" value="18"/>
+    <property name="pareja">
+    	<ref bean="MiOtraPersona"/>
+    </property>
+  </bean>
+
+  <bean id="MiOtraPersona" class="com.miempresa.ejemplo.aop.proxy.Mujer">
+    <property name="nombre" value="Isabel"/>
+    <property name="edad" value="18"/>
+    <property name="pareja">
+    	<ref bean="MiPersona"/>
+    </property>
+  </bean>
+
+  <!-- ADVICE -->
+  <bean id="miAdvice" class="com.miempresa.ejemplo.aop.proxy.Advice" />
+
+  <!-- POINTCUT -->
+  <aop:config>
+    <aop:aspect id="miAspect" ref="miAdvice" >
+      <aop:pointcut id="pointcut" expression="execution(* *.set*(..))" />
+      <aop:around method="invoke" pointcut-ref="pointcut"  />
+    </aop:aspect>
+  </aop:config>
+
+   
+</beans>

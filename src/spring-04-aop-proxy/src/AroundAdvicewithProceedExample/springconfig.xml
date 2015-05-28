@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC  "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+   
+   <!--CONFIG-->
+   <bean id="businesslogicbean" class="org.springframework.aop.framework.ProxyFactoryBean">
+      <property name="proxyInterfaces">
+         <value>AroundAdvicewithProceedExample.IBusinessLogic</value>
+      </property>
+      <property name="target">
+         <ref local="beanTarget"/>
+      </property>
+      <property name="interceptorNames">
+         <list>
+            <value>theAroundAdvisor</value>
+         </list>
+      </property>
+   </bean>
+   
+   <!--CLASS-->
+   <bean id="beanTarget" class="AroundAdvicewithProceedExample.BusinessLogic"/>
+   
+   <!--ADVISOR-->
+   <!--Note: An advisor assembles pointcuts and advice-->
+   <bean id="theAroundAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+      <property name="advice">
+         <ref local="theAroundAdvice"/>
+      </property>
+      <property name="pattern">
+         <value>.*</value>
+      </property>
+   </bean>
+   
+   <!--ADVICE-->
+   <bean id="theAroundAdvice" class="AroundAdvicewithProceedExample.AroundAdvice"/>
+</beans>

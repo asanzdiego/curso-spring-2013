@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="Persona" table="personas">
+    <id name="idPersona" column="id_persona" unsaved-value="0">
+      <generator class="native" />
+    </id>
+    <property name="nombre" type="string" not-null="true" />
+    <property name="edad" type="integer" not-null="true" />
+  </class>
+</hibernate-mapping>

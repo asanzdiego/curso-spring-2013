@@ -1,0 +1,7 @@
+<button class="new">New Person</button>
+<ul>
+  <% _.each(persons, function(person){ %>
+    <li><a href='#person/<%= person.get("name") %>'>
+      <%= person.get("name") %> - <%= person.get("age") %></a></li> 
+  <% }); %>
+</ul>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="miDs" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql:///clase" />
+    <property name="username" value="clase" />
+    <property name="password" value="clase" />
+  </bean>
+
+  <bean id="miJt" class="org.springframework.jdbc.core.JdbcTemplate">
+    <property name="dataSource" ref="miDs" />
+  </bean>
+
+</beans>

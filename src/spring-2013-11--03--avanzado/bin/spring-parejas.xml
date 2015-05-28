@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id="MiPlantillaPersona" abstract="true" class="com.miempresa.ejemplo.parejas.Hombre">
+    <property name="edad" value="18"/>
+  </bean>
+  
+  <bean id="MiPersona" parent="MiPlantillaPersona">
+    <property name="nombre" value="Alba"/>
+    <property name="pareja">
+    	<!-- ref bean="MiOtraPersona"/-->
+    	<null />
+    </property>
+  </bean>
+    
+  <bean id="MiOtraPersona" class="com.miempresa.ejemplo.parejas.Mujer"
+  	init-method="alIniciar" destroy-method="alDestruir" lazy-init="true">
+    <property name="nombre" value="Isabel"/>
+    <property name="edad" value="18"/>
+    <property name="pareja">
+    	<ref bean="MiPersona"/>
+    </property>
+  </bean>
+   
+</beans>

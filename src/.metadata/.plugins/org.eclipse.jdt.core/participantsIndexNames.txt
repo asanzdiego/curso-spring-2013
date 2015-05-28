@@ -1,0 +1,9 @@
+INDEX VERSION 1.126
+/home/adolfo/Curro/cursos/curso-spring-2013/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2447920908.index
+/spring-sample-mvc/src/main/java
+/home/adolfo/Curro/cursos/curso-spring-2013/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/91307724.index
+/spring-sample-mvc/src/main/java
+/home/adolfo/Curro/cursos/curso-spring-2013/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/2864019345.index
+/spring-sample-mvc-security/src/main/java
+/home/adolfo/Curro/cursos/curso-spring-2013/workspace/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/4026434942.index
+/spring-sample-mvc-security/src/main/java

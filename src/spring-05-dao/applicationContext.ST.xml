@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-// SPRING//DTD BEAN//EN"
+"http://www. Springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+	<bean id="usuarioDaoTarget"
+		class="curso.dao.JDBCTemplate.UsuarioDaoJDBCTemplate">
+		<property name="dataSource">
+			<ref local="myDataSource" />
+		</property>
+	</bean>
+
+	<!-- Conección a base de datos -->
+	<bean id="myDataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName">
+			<value>com.mysql.jdbc.Driver</value>
+		</property>
+		<property name="url">
+			<value>jdbc:mysql://localhost/clase</value>
+		</property>
+		<property name="username">
+			<value>clase</value>
+		</property>
+		<property name="password">
+			<value>clase</value>
+		</property>
+	</bean>
+
+	<bean id="miDao"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="txManager" />
+		<property name="target" ref="usuarioDaoTarget" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="save*">PROPAGATION_REQUIRED</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED,ISOLATION_SERIALIZABLE,timeout_60</prop>
+				<prop key="listar*">PROPAGATION_REQUIRED,readOnly</prop>
+			</props>
+		</property>
+	</bean>
+  
+	<bean id="txManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="myDataSource" />
+	</bean>
+</beans>

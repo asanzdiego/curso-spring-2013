@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  
+  <bean id="MiVehiculo1" class="com.miempresa.ejemplo.vehiculos.Coche">
+    <property name="marca" value="Seat"/>
+    <property name="matricula" value="1234-M"/>
+  </bean>
+  
+  <bean id="MiVehiculo2" class="com.miempresa.ejemplo.vehiculos.Coche" scope="prototype">
+    <property name="marca" value="Peugeot"/>
+    <property name="matricula" value="1234-M"/>
+  </bean>
+
+  <bean id="MiVehiculo" class="com.miempresa.ejemplo.vehiculos.Moto">
+    <constructor-arg index="0" value="Yamaha"/>
+    <constructor-arg index="1" value="1234-M"/>
+  </bean>
+      
+  <bean id="MiOtroVehiculo" class="com.miempresa.ejemplo.vehiculos.Coche" scope="prototype">
+  </bean>
+  
+  <bean id="MiFactoria" class="com.miempresa.ejemplo.vehiculos.Factoria">
+  </bean>
+  
+  <bean id="MiVehiculoConFactoria" factory-bean="MiFactoria" factory-method="getVehiculo">
+  </bean>
+
+ 
+</beans>

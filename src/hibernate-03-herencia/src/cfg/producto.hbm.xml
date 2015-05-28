@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+
+	<!-- UNA TABLA PARA TODAS LAS CLASES -->
+	
+	<class name="modelo.Producto" table="productos"
+		discriminator-value="P">
+		<id name="idProducto" column="id_producto" unsaved-value="0">
+			<generator class="identity" />
+		</id>
+		<discriminator column="tipo" type="string" length="2" />
+		<property name="nombre" />
+		<property name="stock" />
+		<subclass name="modelo.Software" discriminator-value="SW">
+			<property name="tecnologia" />
+		</subclass>
+		<subclass name="modelo.Hardware" discriminator-value="HW">
+			<property name="peso" />
+		</subclass>
+
+		<subclass name="modelo.Consultoria" discriminator-value="CO">
+			<property name="ppc" />
+		</subclass>
+	</class>
+	
+
+	<!-- JOINED CLASES -->
+  <!-- 
+	<class name="modelo.Producto" table="productos">
+		<id name="idProducto" column="id_producto" unsaved-value="0">
+			<generator class="identity" />
+		</id>
+
+		<property name="nombre" />
+		<property name="stock" />
+
+		<joined-subclass name="modelo.Software">
+			<key column="id_producto" />
+			<property name="tecnologia" />
+		</joined-subclass>
+
+		<joined-subclass name="modelo.Hardware">
+			<key column="id_producto" on-delete="noaction" />
+			<property name="peso" />
+		</joined-subclass>
+
+		<joined-subclass name="modelo.Consultoria">
+			<key column="id_producto" />
+			<property name="ppc" />
+		</joined-subclass>
+
+	</class>
+  -->
+  
+</hibernate-mapping>
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/commons-dbutils-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/spring-beans-2.5.6.SEC03.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/spring-context-2.5.6.SEC03.jar"/>
+	<classpathentry kind="lib" path="C:/Users/usuario/Documents/workspace-sts-3.4.0.RELEASE/spring-2013-11--01--simple-parejas/lib/spring-core-2.5.6.SEC03.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

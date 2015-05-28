@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+  <!-- TARGET -->
+	<bean id="persona" class="Persona">
+		<property name="nombre" value="jose" />
+		<property name="edad" value="22" />
+	</bean>
+	
+  <!-- PROXY -->
+	<bean id="personaProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="target" ref="persona" />
+		<property name="interceptorNames" value="miPointcut"/>
+		<property name="proxyTargetClass" value="true"/>
+	</bean>
+
+	<!-- POINTCUT -->
+	<bean id="miPointcut" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="advice" ref="miAdvice"/>
+		<property name="pattern" value=".*set.*"/>
+	</bean>
+  
+	<!-- ADVICE -->
+	<bean id="miAdvice" class="MiAdvice"/>
+	
+</beans>

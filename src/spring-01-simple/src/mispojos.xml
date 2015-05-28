@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+  <bean id="miPersona" class="Persona" scope="singleton"
+    init-method="creacion" destroy-method="destruccion">
+    <property name="nombre">
+      <value>pepe</value>
+    </property>
+    <property name="edad" value="66" />
+    <property name="pareja">
+      <ref bean="miPersona2" />
+    </property>
+  </bean>
+  
+  <bean id="miPersona2" class="Persona" scope="prototype">
+    <property name="nombre">
+      <value>luisa</value>
+    </property>
+    <property name="edad" value="99" />
+    <property name="pareja" ref="esaPersona" />
+  </bean>
+  
+  <bean id="esaPersona" class="Persona">
+    <constructor-arg index="0" value="fer" />
+    <constructor-arg index="1" value="88" />
+    <constructor-arg index="2" value="2" />
+    <constructor-arg index="3">
+      <null />
+    </constructor-arg>
+    <property name="edad" value="188" />
+  </bean>
+  
+</beans>

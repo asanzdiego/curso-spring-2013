@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="miDao"
+    class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+    <property name="target" ref="miDaoTarget" />
+    <property name="transactionManager" ref="miTransactionManager" />
+    <property name="transactionAttributes">
+      <props>
+        <prop key="save*">PROPAGATION_REQUIRED</prop>
+        <prop key="listar*">PROPAGATION_REQUIRED,readOnly</prop>
+      </props>
+    </property>
+  </bean>
+
+  <bean id="miDaoTarget"
+    class="curso.dao.hibernate.UsuarioDaoHibernateTemplateCursoImpl">
+    <property name="sessionFactory" ref="miSf" />
+  </bean>
+
+  <bean id="miSf"
+    class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource" ref="miDs" />
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+        <prop key="hibernate.show_sql">true</prop>
+        <prop key="hibernate.format_sql">true</prop>
+        <prop key="hibernate.current_session_context_class">thread</prop>
+      </props>
+    </property>
+    <property name="mappingDirectoryLocations" value="curso/modelo" />
+  </bean>
+
+  <bean id="miDs"
+    class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql:///test" />
+    <property name="username" value="root" />
+    <property name="password" value="root" />
+  </bean>
+
+  <bean id="miTransactionManager"
+    class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <property name="sessionFactory" ref="miSf" />
+  </bean>
+</beans>

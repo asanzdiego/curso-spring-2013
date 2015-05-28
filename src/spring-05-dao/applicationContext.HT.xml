@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-// SPRING//DTD BEAN//EN"
+"http://www. Springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName">
+      <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property name="url">
+      <value>jdbc:mysql://localhost/clase</value>
+    </property>
+    <property name="username">
+      <value>clase</value>
+    </property>
+    <property name="password">
+      <value>clase</value>
+    </property>
+  </bean>
+  
+  <!-- Hibernate SessionFactory -->
+  <bean id="sessionFactory"
+    class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource">
+      <ref local="myDataSource" />
+    </property>
+    <!-- Must references all OR mapping files. -->
+    <property name="mappingResources">
+      <list>
+        <value>curso/modelo/Usuario.hbm.xml</value>
+      </list>
+    </property>
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">
+          org.hibernate.dialect.MySQLDialect
+        </prop>
+        <prop key="hibernate.connection.pool_size">1</prop>
+        <prop key="hibernate.show_sql">false</prop>
+        <prop key="hibernate.hbm2ddl.auto">create</prop>
+      </props>
+    </property>
+  </bean>
+
+  <bean id="transactionManager"
+    class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+    <property name="sessionFactory">
+      <ref bean="sessionFactory" />
+    </property>
+  </bean>
+  
+  <bean id="miDao"
+    class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+    <property name="transactionManager">
+      <ref local="transactionManager" />
+    </property>
+    <property name="target">
+      <ref local="usuarioImpl" />
+    </property>
+    <property name="transactionAttributes"><!-- define the transaction specs here -->
+      <props>
+        <prop key="save*">PROPAGATION_REQUIRED</prop>
+        <prop key="delete*">PROPAGATION_REQUIRED</prop>
+      </props>
+    </property>
+  </bean>
+
+  <bean id="usuarioImpl" class="curso.dao.hibernate.UsuarioDaoHibernate">
+    <property name="sessionFactory">
+      <ref local="sessionFactory" />
+    </property>
+  </bean>
+</beans>

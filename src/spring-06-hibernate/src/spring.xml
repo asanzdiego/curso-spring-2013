@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-// SPRING//DTD BEAN//EN"
+"http://www. Springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <bean id="miDao" class="PersonaDAOVitaminado">
+    <property name="sessionFactory">
+      <ref local="miSessionFactory" />
+    </property>
+  </bean>
+
+  <bean id="miSessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+    <property name="dataSource">
+      <ref local="miDataSource" />
+    </property>
+    <property name="mappingResources">
+      <list>
+        <value>persona.hbm.xml</value>
+      </list>
+    </property>
+    <property name="hibernateProperties">
+      <props>
+        <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+        <prop key="hibernate.show_sql">false</prop>
+        <prop key="hibernate.hbm2ddl.auto">update</prop>
+      </props>
+    </property>
+  </bean>
+  
+  <bean id="miDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+    <property name="driverClassName">
+      <value>com.mysql.jdbc.Driver</value>
+    </property>
+    <property name="url">
+      <value>jdbc:mysql://localhost:3306/clase</value>
+    </property>
+    <property name="username">
+      <value>clase</value>
+    </property>
+    <property name="password">
+      <value>clase</value>
+    </property>
+  </bean>
+
+
+</beans>

@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="generator" content="pandoc" />
+  <meta name="description" content="Persistencia con Hibernate" />
+  <meta name="author" content="Adolfo Sanz De Diego" />
+  <meta name="copyright" content="Persistencia con Hibernate - Adolfo Sanz De Diego -  Noviembre 2013" /> 
+  <title>Persistencia con Hibernate</title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+
+  <!-- deck core css -->
+  <link rel="stylesheet" href="./css/deck-core.css">
+
+  <!-- deck extensions css -->
+  <link rel="stylesheet" href="./css/deck-extension/goto.css">
+  <link rel="stylesheet" href="./css/deck-extension/hash.css">
+  <link rel="stylesheet" href="./css/deck-extension/menu.css">
+  <link rel="stylesheet" href="./css/deck-extension/navigation.css">
+  <link rel="stylesheet" href="./css/deck-extension/status.css">
+  <link rel="stylesheet" href="./css/deck-extension/pointer.css">
+
+  <!-- deck slide theme css -->
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-theme/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/mnml.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/neon.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/swiss.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  -->
+
+  <!-- deck slide transition css -->
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-transition/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/fade.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/horizontal.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/vertical.css">
+  -->
+
+  <!-- custom css just for this page -->
+  <link rel="stylesheet" href="./css/deck-custom.css">
+
+  <!-- modernizr deck js  -->
+  <script src="./js/modernizr-custom.js"></script>
+
+</head>
+<body class="deck-container">
+<section class="slide">
+  <h2 id="titlepage">Persistencia con Hibernate</h2>
+  <h3 id="documentauthor">Adolfo Sanz De Diego</h3>
+  <h4 id="documentdate">Noviembre 2013</h4>
+</section>
+
+<section id="creditos" class="titleslide slide level1"><h1><span class="header-section-number">1</span> Creditos</h1></section><section id="pronoide" class="slide level2">
+<h2><span class="header-section-number">1.1</span> Pronoide</h2>
+<figure>
+<img src="../img/logo-pronoide.png" alt="Pronoide" /><figcaption>Pronoide</figcaption>
+</figure>
+<ul>
+<li><p>Pronoide consolida sus servicios de formación superando las <strong>22.000 horas impartidas</strong> en más de 500 cursos (Diciembre 2011)</p></li>
+<li><p>En la vorágine de <strong>tecnologías y marcos de trabajo existentes</strong>, una empresa dedica demasiado esfuerzo en analizar, comparar y finalmente decidir cuáles son los pilares sobre los que construir sus proyectos.</p></li>
+<li><p>Nuestros Servicios de Formación permiten ayudarle en esta tarea, transfiriéndoles nuestra <strong>experiencia real de más de 10 años</strong>.</p></li>
+</ul>
+</section><section id="autor" class="slide level2">
+<h2><span class="header-section-number">1.2</span> Autor</h2>
+<ul>
+<li><p><strong>Adolfo Sanz De Diego</strong></p></li>
+<li><p>Mi nick: <strong>asanzdiego</strong></p></li>
+<li><p>AboutMe: <strong><a href="http://about.me/asanzdiego">http://about.me/asanzdiego</a></strong></p>
+<ul>
+<li>GitHub: <a href="http://github.com/asanzdiego/">http://github.com/asanzdiego/</a></li>
+<li>Twitter: <a href="http://twitter.com/asanzdiego">http://twitter.com/asanzdiego</a></li>
+<li>Blog: <a href="http://asanzdiego.blogspot.com.es">http://asanzdiego.blogspot.com.es</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">http://www.linkedin.com/in/asanzdiego</a></li>
+</ul></li>
+</ul>
+</section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">1.3</span> Licencia</h2>
+<ul>
+<li>Estas <strong>transparencias</strong> están bajo una licencia:
+<ul>
+<li>Creative Commons Reconocimiento-CompartirIgual 3.0 <a href="http://creativecommons.org/licenses/by-sa/3.0/es/">http://creativecommons.org/licenses/by-sa/3.0/es/</a></li>
+</ul></li>
+<li>El <strong>código fuente</strong> de los programas están bajo una licencia:
+<ul>
+<li>GPL 3.0 <a href="http://www.viti.es/gnu/licenses/gpl.html">http://www.viti.es/gnu/licenses/gpl.html</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="introducción" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Introducción</h1></section><section id="bases-de-datos-relacionales" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Bases de datos relacionales</h2>
+<ul>
+<li><p>En una aplicación manejamos la información con <strong>objetos</strong>, y normalmente guardamos estos datos en un <strong>BD relacional</strong>.</p></li>
+<li>Esto tiene varios <strong>inconvenientes</strong>:
+<ul>
+<li>Hay que generar mucho código JDBC.</li>
+<li>Cada BD tiene su propio dialecto.</li>
+<li>No hay una conversión directa de objetos a tablas.</li>
+</ul></li>
+</ul>
+</section><section id="object-relational-mapping" class="slide level2">
+<h2><span class="header-section-number">2.2</span> Object Relational Mapping</h2>
+<ul>
+<li>ORM intenta <strong>solucionar los problemas</strong> anteriores:
+<ul>
+<li>Lee/escribe objetos directamente desde/hacia la BD.</li>
+<li>Ahorra mucho código siendo las aplicaciones más mantenibles.</li>
+<li>Se abstrae de las particularidades de la BD.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/hibernate-orm.png" alt="ORM" /><figcaption>ORM</figcaption>
+</figure>
+</section><section id="hibernate" class="slide level2">
+<h2><span class="header-section-number">2.3</span> Hibernate</h2>
+<ul>
+<li>Es el ORM más <strong>exitoso</strong> y además es Software Libre (<strong>LGPL</strong>).</li>
+<li><strong>No requiere contenedor y no es intrusivo</strong>.</li>
+<li>Es compatible con <strong>JPA</strong> (aunque pierde funcionalidad).</li>
+</ul>
+<figure>
+<img src="../img/hibernate-overview.png" alt="Hibernate" /><figcaption>Hibernate</figcaption>
+</figure>
+</section>
+<section id="conexión-a-una-bd" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Conexión a una BD</h1></section><section id="hibernate.cfg.xml" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Hibernate.cfg.xml</h2>
+<ul>
+<li>Fichero de <strong>configuración</strong> donde indicamos cosas como:
+<ul>
+<li>Cual es la BD y su localización.</li>
+<li>Dialecto de SQL.</li>
+<li>Cómo obtener conexiones.</li>
+<li>Generación automática del esquema de BD.</li>
+<li>Localización de los ficheros de mapeo.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&#39;1.0&#39; encoding=&#39;UTF-8&#39;<span class="kw">?&gt;</span>
+<span class="dt">&lt;!DOCTYPE </span>hibernate-configuration PUBLIC &quot;-//Hibernate/Hibernate Configuration DTD 3.0//EN&quot;
+  &quot;http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd&quot;<span class="dt">&gt;</span>
+<span class="kw">&lt;hibernate-configuration&gt;</span>
+  <span class="kw">&lt;session-factory&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;connection.url&quot;</span><span class="kw">&gt;</span>jdbc:mysql://localhost:3306/bbdd<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;connection.driver_class&quot;</span><span class="kw">&gt;</span>com.mysql.jdbc.Driver<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;connection.username&quot;</span><span class="kw">&gt;</span>root<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;connection.password&quot;</span><span class="kw">&gt;</span>root<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;dialect&quot;</span><span class="kw">&gt;</span>org.hibernate.dialect.MySQLDialect<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;hibernate.show_sql&quot;</span><span class="kw">&gt;</span>true<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;hibernate.hbm2ddl.auto&quot;</span><span class="kw">&gt;</span>update<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;transaction.factory_class&quot;</span><span class="kw">&gt;</span>
+      org.hibernate.transaction.JDBCTransactionFactory
+    <span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;current_session_context_class&quot;</span><span class="kw">&gt;</span>thread<span class="kw">&lt;/property&gt;</span>
+    <span class="kw">&lt;mapping</span><span class="ot"> resource=</span><span class="st">&quot;/cfg/hbm.xml&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/session-factory&gt;</span>
+<span class="kw">&lt;/hibernate-configuration&gt;</span></code></pre>
+</section><section id="sessionfactory" class="slide level2">
+<h2><span class="header-section-number">3.2</span> SessionFactory</h2>
+<ul>
+<li>Primer objeto que creamos.</li>
+<li>Creada a partir de hibernate.cfg.xml.</li>
+<li>Muy costosa de crear y se puede compartir por varios hilos (threadsafe).</li>
+<li>Un único <strong>SessionFactory por cada BD</strong> a la que nos conectemos en cada aplicación.</li>
+<li>Su cometido es ocultar la complejidad de crear sesiones de persistencia.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">SessionFactory sessionFactory =
+  <span class="kw">new</span> Configuration()
+    .<span class="fu">configure</span>(<span class="st">&quot;/cfg/hibernate.cfg.xml&quot;</span>)
+      .<span class="fu">buildSessionFactory</span>();</code></pre>
+</section><section id="session" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Session</h2>
+<ul>
+<li>Se obtiene de la SessionFactory.</li>
+<li>Es la <strong>principal interfaz</strong> entre nuestra aplicación e Hibernate.</li>
+<li>Responsable de guardar y leer objetos de la BBDD.</li>
+<li>Asociada a una conexión.</li>
+<li>No se debe compartir entre hilos.</li>
+<li>Es preciso desconectar y cerrar las sesiones cuando ya no son necesarias.</li>
+<li>Podemos crearlas y cerrarlas según nuestras necesidades.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Session s = sessionFactory.<span class="fu">openSession</span>();</code></pre>
+</section>
+<section id="persistencia-de-objetos" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Persistencia de objetos</h1></section><section id="insertar-un-objeto" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Insertar un objeto</h2>
+<ul>
+<li>El ID no puede contener un valor, a no ser que use &lt;generator class=&quot;assigned&quot; /&gt;, en cuyo caso será obligatorio.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Persona p = <span class="kw">new</span> <span class="fu">Persona</span>(<span class="dv">0</span>, <span class="st">&quot;Homer Jay Simpson&quot;</span>, <span class="st">&quot;C/Evergeen Terrace&quot;</span>);
+Session s = sessionFactory.<span class="fu">openSession</span>();
+s.<span class="fu">beginTransaction</span>();
+Integer id = (Integer) s.<span class="fu">save</span>(p);
+s.<span class="fu">getTransaction</span>().<span class="fu">commit</span>();
+s.<span class="fu">disconnect</span>();
+s.<span class="fu">close</span>();</code></pre>
+</section><section id="actualizar-o-borrar-un-objeto" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Actualizar o borrar un objeto</h2>
+<ul>
+<li><strong>session.update(objeto)</strong>: Actualiza un objeto en base de datos.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">session.<span class="fu">update</span>(objeto);</code></pre>
+<ul>
+<li><strong>session.saveOrUpdate(objeto)</strong>: Salva o actualiza un objeto en base de datos.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">session.<span class="fu">saveOrUpdate</span>(objeto);</code></pre>
+<ul>
+<li><strong>session.delete(objeto)</strong>: Borra un objeto en base de datos.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">session.<span class="fu">delete</span>(objeto);</code></pre>
+</section><section id="leer-un-objeto" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Leer un objeto</h2>
+<ul>
+<li><strong>session.get()</strong>: Devuelve null si no encuentra el objeto.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Persona p = (Persona) s.<span class="fu">get</span>(Persona.<span class="fu">class</span>, id);</code></pre>
+<ul>
+<li><strong>session.load()</strong>: Lanza una excepción si no encuentra el objeto.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Persona p = (Persona) s.<span class="fu">load</span>(Persona.<span class="fu">class</span>, id);</code></pre>
+</section><section id="deshacer-cambios" class="slide level2">
+<h2><span class="header-section-number">4.4</span> Deshacer cambios</h2>
+<ul>
+<li><strong>sesion.refresh(objeto)</strong>: Vuelve a cargar los datos de la BD. Es necesario que el objeto tenga valor en el ID.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">sesion.<span class="fu">refresh</span>(objeto)</code></pre>
+</section><section id="transacciones" class="slide level2">
+<h2><span class="header-section-number">4.5</span> Transacciones</h2>
+<ul>
+<li>Cuando usemos una sesión para modificar la BD se usará siempre una transacción.</li>
+<li>La sesión es nuestra factoría de transacciones.</li>
+<li>La transacción que proporciona puede ser JDBC ó JTA.</li>
+<li>Una sesión <strong>sólo persistirá con clases que estén mapeadas</strong>.</li>
+</ul>
+</section>
+<section id="ciclo-de-vida" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Ciclo de vida</h1></section><section id="esquema" class="slide level2">
+<h2><span class="header-section-number">5.1</span> Esquema</h2>
+<figure>
+<img src="../img/hibernate-life-cicle.png" alt="Ciclo de Vida" /><figcaption>Ciclo de Vida</figcaption>
+</figure>
+</section><section id="transient-persistent-y-detached" class="slide level2">
+<h2><span class="header-section-number">5.2</span> Transient, Persistent y Detached</h2>
+<ul>
+<li><strong>Transient</strong>
+<ul>
+<li>El objeto se ha creado pero al no estar persistido no tiene ID.</li>
+</ul></li>
+<li><strong>Persistent</strong>
+<ul>
+<li>Tiene representación en la base de datos y por lo tanto un valor en el ID.</li>
+<li>El objeto está sincronizado con su equivalente en la BD.</li>
+</ul></li>
+<li><strong>Detached</strong>
+<ul>
+<li>Tiene representación en la base de datos y por lo tanto un valor en el ID.</li>
+<li>El objeto no está sincronizado con su equivalente en la BD.</li>
+</ul></li>
+</ul>
+</section><section id="sincronización" class="slide level2">
+<h2><span class="header-section-number">5.3</span> Sincronización</h2>
+<ul>
+<li>Mientras el objeto está en estado <strong>Persistent</strong>, no es necesario el update, pues la sesión actualiza la BD con los valores de todos los objetos transaccionales que esté manejando en el momento de hacer commit.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Session s = sf.<span class="fu">openSession</span>();
+s.<span class="fu">beginTransaction</span>();
+Persona p = (Persona) s.<span class="fu">get</span>(Persona.<span class="fu">class</span>, <span class="dv">4</span>);
+p.<span class="fu">setNombre</span>(<span class="st">&quot;Homer J Simpson&quot;</span>);
+s.<span class="fu">getTransaction</span>().<span class="fu">commit</span>();
+s.<span class="fu">disconnect</span>();
+s.<span class="fu">close</span>();</code></pre>
+</section><section id="evict-clear-merge-y-flush" class="slide level2">
+<h2><span class="header-section-number">5.4</span> Evict, clear, merge y flush</h2>
+<ul>
+<li><strong>session.evict(object)</strong>:
+<ul>
+<li>Se utiliza para que la sesión pase un objeto a detached.</li>
+<li>Podemos seguir usando el objeto, pero sus cambios no se peristirán.</li>
+</ul></li>
+<li><strong>session.clear()</strong>:
+<ul>
+<li>La sesión se deshace de todos sus objetos persistentes, que pasan a detached.</li>
+</ul></li>
+<li><strong>session.merge(obj)</strong>:
+<ul>
+<li>Fusiona un objeto detached con otro persistente con el mismo ID.</li>
+<li>Si no hay un objeto persistente, intenta cargarlo o crearlo nuevo.</li>
+<li>Devuelve un objeto persistente copia del original, el objeto original sigue en estado detached.</li>
+</ul></li>
+<li><strong>session.flush()</strong>:
+<ul>
+<li>Los objetos no se persisten realmente hasta que se se cierra la session.</li>
+<li>Con flush forzamos la persistencia antes de cerrarla.</li>
+</ul></li>
+</ul>
+</section>
+<section id="mapeo-xml" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Mapeo XML</h1></section><section id="mapeo-de-objetos" class="slide level2">
+<h2><span class="header-section-number">6.1</span> Mapeo de objetos</h2>
+<ul>
+<li><strong>POJOS</strong>:
+<ul>
+<li>Constructor sin parámetros (obligatorio).</li>
+<li>Métodos get y set (opcional).</li>
+<li>Preferentemente clases no final (opcional).</li>
+<li>Podemos utilizarlos fuera del ámbito de Hibernate.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Persona {
+
+  <span class="kw">private</span> <span class="dt">int</span> idPersona;
+  <span class="kw">private</span> String nombre;
+  <span class="kw">private</span> String direccion;
+  <span class="kw">private</span> <span class="dt">boolean</span> estado;
+  <span class="kw">private</span> java.<span class="fu">util</span>.<span class="fu">Date</span> fechaNacimiento;
+
+  <span class="kw">public</span> <span class="fu">Persona</span>() {
+    <span class="kw">super</span>();
+  }
+
+  <span class="co">// getters y setters</span>
+  ...
+}</code></pre>
+</section><section id="hbm.xml" class="slide level2">
+<h2><span class="header-section-number">6.2</span> hbm.xml</h2>
+<ul>
+<li><p>Indicamos en el fichero de mapeo, para cada POJO:</p>
+<ul>
+<li><p>A qué <strong>tabla</strong> va, el <strong>ID</strong> y los <strong>atributos</strong> que queremos persistir y a qué columnas.</p></li>
+<li><p>Los nombres de tabla y de columna y los tipos de datos se pueden omitir, e Hibernate los obtendrá mediante reflection (más costoso).</p></li>
+</ul></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="dt">&lt;!DOCTYPE </span>hibernate-mapping PUBLIC
+  &quot;-//Hibernate/Hibernate Mapping DTD 3.0//EN&quot;
+  &quot;http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd&quot; <span class="dt">&gt;</span>
+
+<span class="kw">&lt;hibernate-mapping&gt;</span>
+  <span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Persona&quot;</span><span class="ot"> table=</span><span class="st">&quot;persona&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idPersona&quot;</span><span class="ot"> column=</span><span class="st">&quot;id_persona&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;increment&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;/id&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> not-null=</span><span class="st">&quot;true&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;direccion&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;estado&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;fechaNacimiento&quot;</span><span class="ot"> type=</span><span class="st">&quot;date&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/class&gt;</span>
+<span class="kw">&lt;/hibernate-mapping&gt;</span></code></pre>
+</section><section id="el-id" class="slide level2">
+<h2><span class="header-section-number">6.3</span> El ID</h2>
+<ul>
+<li>Es imprescindible indicar un ID.</li>
+<li>Generación del ID:
+<ul>
+<li><strong>Increment</strong>: Clave entera autoincremental DB2, MySQL, MS SQL Server and Sybase.</li>
+<li><strong>Sequence</strong>: Clave entera obtenida de una secuencia. DB2, PostgreSQL, Oracle.</li>
+<li><strong>Native</strong>: Selecciona increment o sequence dependiendo de las capacidades de la BD.</li>
+<li><strong>Assigned</strong>: Permite a la aplicación generar la clave. Debe asignarse al objeto antes de persistirlo.</li>
+<li><strong>Foreign</strong>: Utiliza una clave obtenida de otro objeto persistido anteriormente.</li>
+</ul></li>
+</ul>
+</section><section id="id-compuesto-con-un-pojo" class="slide level2">
+<h2><span class="header-section-number">6.4</span> ID compuesto con un POJO</h2>
+<ul>
+<li><p>Crear un POJO con un atributo para cada columna de la clave.</p></li>
+<li><p>El ID pasa a ser un objeto de esa clase.</p></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;composite-id</span><span class="ot"> name=</span><span class="st">&quot;claveCompuesta&quot;</span><span class="ot"> class=</span><span class="st">&quot;mipaquete.Clave&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;key-property</span><span class="ot"> name=</span><span class="st">&quot;atributo1&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;key-property</span><span class="ot"> name=</span><span class="st">&quot;atributo2&quot;</span><span class="kw">/&gt;</span>
+  [...]
+<span class="kw">&lt;/composite-id&gt;</span></code></pre>
+</section><section id="id-compuesto-sin-un-pojo" class="slide level2">
+<h2><span class="header-section-number">6.5</span> ID compuesto sin un POJO</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;composite-id&gt;</span>
+  <span class="kw">&lt;key-property</span><span class="ot"> name=</span><span class="st">&quot;atributo1&quot;</span><span class="ot"> type=</span><span class="st">&quot;java.lang.String&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;column</span><span class="ot"> name=</span><span class="st">&quot;COLUMNA_1&quot;</span><span class="ot"> length=</span><span class="st">&quot;2&quot;</span><span class="ot"> not-null=</span><span class="st">&quot;true&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/key-property&gt;</span>
+  <span class="kw">&lt;key-property</span><span class="ot"> name=</span><span class="st">&quot;atributo2&quot;</span><span class="ot"> type=</span><span class="st">&quot;java.lang.String&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;column</span><span class="ot"> name=</span><span class="st">&quot;COLUMNA_2&quot;</span><span class="ot"> length=</span><span class="st">&quot;2&quot;</span><span class="ot"> not-null=</span><span class="st">&quot;true&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/key-property&gt;</span>
+<span class="kw">&lt;/composite-id&gt;</span></code></pre>
+</section><section id="mapeo-de-atributos" class="slide level2">
+<h2><span class="header-section-number">6.6</span> Mapeo de atributos</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;property</span>
+<span class="ot">  name=</span><span class="st">&quot;nombre del atributo&quot;</span><span class="ot"> column=</span><span class="st">&quot;nombre_de_la-columna&quot;</span><span class="ot"> type=</span><span class="st">&quot;tipo&quot;</span>
+<span class="ot">  not-null=</span><span class="st">&quot;true|false&quot;</span><span class="ot"> unique=</span><span class="st">&quot;true|false&quot;</span>
+<span class="ot">  update=</span><span class="st">&quot;true|false&quot;</span><span class="ot"> insert=</span><span class="st">&quot;true|false&quot;</span>
+<span class="ot">  formula=</span><span class="st">&quot;sql&quot;</span><span class="kw">/&gt;</span></code></pre>
+<ul>
+<li><p>Si se omite el nombre de la columna y el tipo, Hibernate usa reflection para obtener esa información (más costoso).</p></li>
+<li><p>Si no queremos persistir un atributo de la clase, basta con no añadirlo al fichero hbm.xml</p></li>
+<li><strong>update/insert</strong>:
+<ul>
+<li><strong>True</strong>: si se incluye la columna en ese tipo de consultas.</li>
+<li><strong>False</strong>: implica que solo se lee el dato de la BD y se genera/actualiza fuera de la aplicación.</li>
+</ul></li>
+<li><strong>formula</strong>:
+<ul>
+<li>permite obtener un atributo como fórmula de campos.</li>
+</ul></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;totalIva&quot;</span><span class="ot"> column=</span><span class="st">&quot;TOTAL_IVA&quot;</span><span class="ot"> formula=</span><span class="st">&quot;TOTAL * IVA&quot;</span><span class="kw">/&gt;</span></code></pre>
+</section><section id="mapeo-de-varias-clases-a-una-tabla" class="slide level2">
+<h2><span class="header-section-number">6.7</span> Mapeo de varias clases a una tabla</h2>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Cliente {
+  <span class="kw">private</span> <span class="dt">int</span> idCliente;
+  <span class="kw">private</span> String nombre;
+  <span class="kw">private</span> Direccion direccion;
+  ...
+}</code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;Cliente&quot;</span><span class="ot"> table=</span><span class="st">&quot;CLIENTE&quot;</span><span class="kw">&gt;</span>
+  ...
+  <span class="kw">&lt;component</span><span class="ot"> name=</span><span class="st">&quot;direccion&quot;</span><span class="ot"> class=</span><span class="st">&quot;modelo.Direccion&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;calle&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;ciudad&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;codigoPostal&quot;</span><span class="ot"> column=</span><span class="st">&quot;CODIGO_POSTAL&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/component&gt;</span>
+  ...
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section>
+<section id="mapeo-de-relaciones" class="titleslide slide level1"><h1><span class="header-section-number">7</span> Mapeo de Relaciones</h1></section><section id="one-to-many-con-set-i" class="slide level2">
+<h2><span class="header-section-number">7.1</span> One to many con Set (I)</h2>
+<ul>
+<li>Un set <strong>no admite duplicados y no mantiene el orden</strong> de inserción.</li>
+<li>Utilizamos en el 'Cliente' un set de pedidos.</li>
+<li>En el 'Pedido' se declara un atributo del tipo 'Cliente'.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Cliente {
+
+  <span class="kw">private</span> Integer idCliente;
+  <span class="kw">private</span> String nombre;
+
+  <span class="co">//  Relación one-to-many</span>
+  <span class="kw">private</span> Set&lt;Pedido&gt; pedidos;
+}</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Pedido {
+
+  <span class="kw">private</span> Integer idPedido;
+  <span class="kw">private</span> String codigo;
+
+  <span class="co">// Relación many-to-one</span>
+  <span class="kw">private</span> Cliente cliente;
+}</code></pre>
+</section><section id="one-to-many-con-set-ii" class="slide level2">
+<h2><span class="header-section-number">7.2</span> One to many con Set (II)</h2>
+<ul>
+<li>Indicamos, tanto en 'Cliente' como en 'Pedido' la columna que hará de <strong>clave foránea</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idCliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;pedidos&quot;</span><span class="ot"> cascade=</span><span class="st">&quot;all&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;one-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Pedido&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/set&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Pedido&quot;</span><span class="ot"> table=</span><span class="st">&quot;pedidos&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idPedido&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_PEDIDO&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;codigo&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;many-to-one</span><span class="ot"> name=</span><span class="st">&quot;cliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="one-to-many-con-list-i" class="slide level2">
+<h2><span class="header-section-number">7.3</span> One to many con List (I)</h2>
+<ul>
+<li>Una lista <strong>mantiene el orden en el que se insertan</strong> los elementos.</li>
+<li>Utilizamos en el 'Cliente' un lista de facturas.</li>
+<li>En la 'Factura' se declara un atributo de tipo 'Cliente'.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Cliente {
+
+  <span class="kw">private</span> Integer idCliente;
+  <span class="kw">private</span> String nombre;
+
+  <span class="co">// Relación one-to-many</span>
+  <span class="kw">private</span> List&lt;Factura&gt; facturas;
+}</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Factura {
+
+  <span class="kw">private</span> Integer idFactura;
+  <span class="kw">private</span> String codigo;
+
+  <span class="co">// Relación many-to-one</span>
+  <span class="kw">private</span> Cliente cliente;
+}</code></pre>
+</section><section id="one-to-many-con-list-ii" class="slide level2">
+<h2><span class="header-section-number">7.4</span> One to many con List (II)</h2>
+<ul>
+<li>Es igual que en con el set, sólo que ahora debemos <strong>indicar la columna de orden</strong> de la tabla de facturas para saber el orden que estas tienen en el List.</li>
+<li>Al recuperar las facturas del 'Cliente' Hibernate las ordenará utilizando esa columna.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idCliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;list</span><span class="ot"> name=</span><span class="st">&quot;facturas&quot;</span><span class="ot"> cascade=</span><span class="st">&quot;all&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;index</span><span class="ot"> column=</span><span class="st">&quot;orden&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;one-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Factura&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/list&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Factura&quot;</span><span class="ot"> table=</span><span class="st">&quot;facturas&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idFactura&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_FACTURA&quot;</span> <span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;codigo&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;many-to-one</span><span class="ot"> name=</span><span class="st">&quot;cliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="many-to-many-i" class="slide level2">
+<h2><span class="header-section-number">7.5</span> Many to many (I)</h2>
+<ul>
+<li>Existe en orientación a objetos pero no en BD, dónde se establece con una <strong>tabla intermedia</strong> con los ID de los dos extremos.</li>
+<li>Un set de comerciales en el cliente.</li>
+<li>Un set de clientes en el comercial.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Cliente {
+
+  <span class="kw">private</span> Integer idCliente;
+  <span class="kw">private</span> String nombre;
+
+  <span class="co">// Relación many-to-many</span>
+  <span class="kw">private</span> Set&lt;Comercial&gt; comerciales;
+}</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Comercial {
+
+  <span class="kw">private</span> Integer idComercial;
+  <span class="kw">private</span> String nombre;
+
+  <span class="co">// Relación many-to-many</span>
+  <span class="kw">private</span> Set&lt;Cliente&gt; clientes;
+}</code></pre>
+</section><section id="many-to-many-ii" class="slide level2">
+<h2><span class="header-section-number">7.6</span> Many to many (II)</h2>
+<ul>
+<li>Debemos indicar el <strong>nombre de la tabla intermedia</strong>.</li>
+<li>Debemos indicar las <strong>columnas de la clave foránea</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idCliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;comerciales&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente-comercial&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;many-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Comercial&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_COMERCIAL&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/set&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Comercial&quot;</span><span class="ot"> table=</span><span class="st">&quot;comerciales&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idComercial&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_COMERCIAL&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;clientes&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente-comercial&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;ID_COMERCIAL&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;many-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span><span class="kw">/&gt;</span>
+  <span class="kw">&lt;/set&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="many-to-many-iii" class="slide level2">
+<h2><span class="header-section-number">7.7</span> Many to many (III)</h2>
+<ul>
+<li><strong>Problemas</strong>:
+<ul>
+<li>Hibernate gestiona la tabla intermedia y no nos permite añadir más columnas que los identificadores.</li>
+</ul></li>
+<li><strong>Solución recomendada</strong>:
+<ul>
+<li>Crear una entidad intermedia que mantenga relaciones de muchos a uno con las otras dos.</li>
+</ul></li>
+</ul>
+</section><section id="one-to-one-i" class="slide level2">
+<h2><span class="header-section-number">7.8</span> One to one (I)</h2>
+<ul>
+<li>Un atributo del tipo 'DatosBancarios' en el cliente.</li>
+<li>Un atributo del tipo 'Cliente' en los datos bancarios.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> Cliente {
+
+  <span class="kw">private</span> Integer idCliente;
+  <span class="kw">private</span> String nombre;
+
+  <span class="co">// Relacion one-to-one</span>
+  <span class="kw">private</span> DatosBancarios datos;
+}</code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="kw">class</span> DatosBancarios {
+
+  <span class="kw">private</span> Integer idCliente;
+
+  <span class="co">//Relacion one-to-one</span>
+  <span class="kw">private</span> Cliente cliente;
+}</code></pre>
+</section><section id="one-to-one-ii" class="slide level2">
+<h2><span class="header-section-number">7.9</span> One to one (II)</h2>
+<ul>
+<li>Indicamos que el atributo 'datosBancarios' surge de una relacion de uno a uno con la clase 'DatosBancarios'.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="ot"> table=</span><span class="st">&quot;cliente&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idCliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;ID_CLIENTE&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;identity&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;one-to-one</span><span class="ot"> name=</span><span class="st">&quot;datos&quot;</span><span class="ot"> class=</span><span class="st">&quot;modelo.DatosBancarios&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+<ul>
+<li>Para <strong>asignar el mismo ID</strong> al objeto 'datosBancarios' que al cliente usamos en el ID 'foreign'.</li>
+<li>Foreign implica que el ID viene de otra tabla.</li>
+<li>Indicamos que el ID es el de 'Cliente' en un parámetro.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;modelo.DatosBancarios&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;idCliente&quot;</span><span class="ot"> column=</span><span class="st">&quot;id_cliente&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;foreign&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;param</span><span class="ot"> name=</span><span class="st">&quot;property&quot;</span><span class="kw">&gt;</span>cliente<span class="kw">&lt;/param&gt;</span>
+    <span class="kw">&lt;/generator&gt;</span>
+  <span class="kw">&lt;/id&gt;</span>
+  <span class="kw">&lt;one-to-one</span><span class="ot"> name=</span><span class="st">&quot;cliente&quot;</span><span class="ot"> class=</span><span class="st">&quot;modelo.Cliente&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="carga-ansiosa-eager" class="slide level2">
+<h2><span class="header-section-number">7.10</span> Carga ansiosa EAGER</h2>
+<ul>
+<li>Leer el objeto supone <strong>obtener también los objetos con los que está relacionado</strong>.</li>
+<li>Puede utilizarse en cualquier tipo de relación.</li>
+<li>Seleccionado por defecto en relaciones one-to-one.</li>
+<li>Usado incorrectamente, puede malgastar los recursos.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;pedidos&quot;</span><span class="ot"> lazy=</span><span class="st">&quot;false&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;id_cliente&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;one-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Pedido&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/set&gt;</span></code></pre>
+</section><section id="carga-perezosa-lazy" class="slide level2">
+<h2><span class="header-section-number">7.11</span> Carga perezosa LAZY</h2>
+<ul>
+<li>Se lee el objeto pero <strong>no se cargan sus relaciones hasta que se acceda a ellas</strong>.</li>
+<li>Puede utilizarse en cualquier tipo de relación.</li>
+<li>Seleccionado por defecto en relaciones one-to-many y many-to-many.</li>
+<li>Cuando hay carga perezosa, Hibernate nos entrega proxies.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;pedidos&quot;</span><span class="ot"> lazy=</span><span class="st">&quot;true&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;id_cliente&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;one-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Pedido&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/set&gt;</span></code></pre>
+</section><section id="proxies" class="slide level2">
+<h2><span class="header-section-number">7.12</span> Proxies</h2>
+<ul>
+<li><p>El proxy que devuelve Hibernate cuando hay carga perezosa es un interceptor que avisa a la sesión del acceso a la información no cargada.</p></li>
+<li><p>La sesión recibe el aviso y ejecuta el select pertinente.</p></li>
+<li><p>Si se ha cerrado la sesión con la que se cargó el objeto y se intenta acceder a las relaciones no cargadas se lanza una <strong>LazyInicializationException</strong>.</p></li>
+</ul>
+</section><section id="cascade" class="slide level2">
+<h2><span class="header-section-number">7.13</span> Cascade</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;Cliente&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;set</span><span class="ot"> name=</span><span class="st">&quot;pedidos&quot;</span><span class="ot"> cascade=</span><span class="st">&quot;all&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;id_cliente&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;one-to-many</span><span class="ot"> class=</span><span class="st">&quot;modelo.Pedido&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/set&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+<ul>
+<li><p><strong>cascade=&quot;none&quot;</strong>: por defecto Hibernate ignora la asociacion.</p></li>
+<li><p><strong>cascade=&quot;save-update&quot;</strong>: Hibernate recorrerá la relacion cuando se persista el primer objeto e insertará o modificará los objetos nuevos y los que esten modificados.</p></li>
+<li><p><strong>cascade=&quot;delete&quot;</strong>: Hibernate recorrerá la relación borrando los objetos que se hayan eliminado de la relación.</p></li>
+<li><p><strong>cascade=&quot;all&quot;</strong>: Hibernate propagará las inserciones, modificaciones y borrados a lo largo de la relación.</p></li>
+<li><p><strong>cascade=&quot;all-delete-orphan&quot;</strong>: igual que 'all' pero además se eliminarán aquellas entidades que queden sin referencia en la BD.</p></li>
+<li><p><strong>cascade=&quot;delete-orphan&quot;</strong>: Hibernate eliminará las entidades que queden sin referencia en la BD.</p></li>
+</ul>
+</section>
+<section id="mapeo-de-herencia" class="titleslide slide level1"><h1><span class="header-section-number">8</span> Mapeo de Herencia</h1></section><section id="ejemplo" class="slide level2">
+<h2><span class="header-section-number">8.1</span> Ejemplo</h2>
+<figure>
+<img src="../img/hibernate-herencia.png" alt="Ejemplo herencia" /><figcaption>Ejemplo herencia</figcaption>
+</figure>
+</section><section id="estatregias" class="slide level2">
+<h2><span class="header-section-number">8.2</span> Estatregias</h2>
+<ul>
+<li>Hibernate permite persistir objetos de clases que utilizan herencia.</li>
+<li>Existen 3 estrategias para organizar la información en la BD.
+<ul>
+<li><strong>Una sola tabla para todas las clases</strong></li>
+<li><strong>Una tabla para cada clase (la padre y las hijas)</strong></li>
+<li><strong>Una tabla para cada subclase (sólo las hijas)</strong></li>
+</ul></li>
+<li>La estrategia escogida es transparente para la aplicación</li>
+</ul>
+</section><section id="una-sóla-tabla-para-todas-las-clases" class="slide level2">
+<h2><span class="header-section-number">8.3</span> Una sóla tabla para todas las clases</h2>
+<ul>
+<li>Se mapean todas las clases (la padre y las hijas) en una sola tabla.</li>
+<li>Las columnas que mapeen los atributos distintos de las clases hijas deberán ser <strong>nullables</strong>.</li>
+<li>Se añade una columna a la tabla para indicar el subtipo de cada registro (<strong>discriminator column</strong>).</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;Payment&quot;</span><span class="ot"> table=</span><span class="st">&quot;PAYMENT&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;id&quot;</span><span class="ot"> type=</span><span class="st">&quot;long&quot;</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;native&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;/id&gt;</span>
+    <span class="kw">&lt;discriminator</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_TYPE&quot;</span><span class="ot"> type=</span><span class="st">&quot;string&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;amount&quot;</span><span class="ot"> column=</span><span class="st">&quot;AMOUNT&quot;</span><span class="kw">/&gt;</span>
+    ...
+    <span class="kw">&lt;subclass</span><span class="ot"> name=</span><span class="st">&quot;CreditCardPayment&quot;</span><span class="ot"> discriminator-value=</span><span class="st">&quot;CREDIT&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;creditCardType&quot;</span><span class="ot"> column=</span><span class="st">&quot;CCTYPE&quot;</span><span class="kw">/&gt;</span>
+        ...
+    <span class="kw">&lt;/subclass&gt;</span>
+    <span class="kw">&lt;subclass</span><span class="ot"> name=</span><span class="st">&quot;CashPayment&quot;</span><span class="ot"> discriminator-value=</span><span class="st">&quot;CASH&quot;</span><span class="kw">&gt;</span>
+        ...
+    <span class="kw">&lt;/subclass&gt;</span>
+    <span class="kw">&lt;subclass</span><span class="ot"> name=</span><span class="st">&quot;ChequePayment&quot;</span><span class="ot"> discriminator-value=</span><span class="st">&quot;CHEQUE&quot;</span><span class="kw">&gt;</span>
+        ...
+    <span class="kw">&lt;/subclass&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="una-tabla-para-cada-clase-la-padre-y-las-hijas" class="slide level2">
+<h2><span class="header-section-number">8.4</span> Una tabla para cada clase (la padre y las hijas)</h2>
+<ul>
+<li>Se mapean todas las clases (la padre y las hijas) en tablas distintas.</li>
+<li>No hay columnas infrautilizadas y todas <strong>pueden ser not-null</strong>.</li>
+<li>Las consultas se realizan con join, más lento que con una sola tabla.</li>
+<li><strong>Generalmente la mejor solución</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;Payment&quot;</span><span class="ot"> table=</span><span class="st">&quot;PAYMENT&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;id&quot;</span><span class="ot"> type=</span><span class="st">&quot;long&quot;</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;native&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;/id&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;amount&quot;</span><span class="ot"> column=</span><span class="st">&quot;AMOUNT&quot;</span><span class="kw">/&gt;</span>
+    ...
+    <span class="kw">&lt;joined-subclass</span><span class="ot"> name=</span><span class="st">&quot;CreditCardPayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CREDIT_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">/&gt;</span>
+        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;creditCardType&quot;</span><span class="ot"> column=</span><span class="st">&quot;CCTYPE&quot;</span><span class="kw">/&gt;</span>
+        ...
+    <span class="kw">&lt;/joined-subclass&gt;</span>
+    <span class="kw">&lt;joined-subclass</span><span class="ot"> name=</span><span class="st">&quot;CashPayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CASH_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">/&gt;</span>
+        ...
+    <span class="kw">&lt;/joined-subclass&gt;</span>
+    <span class="kw">&lt;joined-subclass</span><span class="ot"> name=</span><span class="st">&quot;ChequePayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CHEQUE_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;key</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">/&gt;</span>
+        ...
+    <span class="kw">&lt;/joined-subclass&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section><section id="una-tabla-para-cada-subclase-sólo-las-hijas" class="slide level2">
+<h2><span class="header-section-number">8.5</span> Una tabla para cada subclase (sólo las hijas)</h2>
+<ul>
+<li>Se mapean sólo las clases hijas en tablas distintas.</li>
+<li>Las <strong>columnas heredadas se repiten</strong> en cada tabla, y además deberán ser <strong>nullables</strong>.</li>
+<li>Tiene los problemas de las 2 opciones anteriores.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;class</span><span class="ot"> name=</span><span class="st">&quot;Payment&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;id</span><span class="ot"> name=</span><span class="st">&quot;id&quot;</span><span class="ot"> type=</span><span class="st">&quot;long&quot;</span><span class="ot"> column=</span><span class="st">&quot;PAYMENT_ID&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;generator</span><span class="ot"> class=</span><span class="st">&quot;sequence&quot;</span><span class="kw">/&gt;</span>
+    <span class="kw">&lt;/id&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;amount&quot;</span><span class="ot"> column=</span><span class="st">&quot;AMOUNT&quot;</span><span class="kw">/&gt;</span>
+    ...
+    <span class="kw">&lt;union-subclass</span><span class="ot"> name=</span><span class="st">&quot;CreditCardPayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CREDIT_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;creditCardType&quot;</span><span class="ot"> column=</span><span class="st">&quot;CCTYPE&quot;</span><span class="kw">/&gt;</span>
+        ...
+    <span class="kw">&lt;/union-subclass&gt;</span>
+    <span class="kw">&lt;union-subclass</span><span class="ot"> name=</span><span class="st">&quot;CashPayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CASH_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        ...
+    <span class="kw">&lt;/union-subclass&gt;</span>
+    <span class="kw">&lt;union-subclass</span><span class="ot"> name=</span><span class="st">&quot;ChequePayment&quot;</span><span class="ot"> table=</span><span class="st">&quot;CHEQUE_PAYMENT&quot;</span><span class="kw">&gt;</span>
+        ...
+    <span class="kw">&lt;/union-subclass&gt;</span>
+<span class="kw">&lt;/class&gt;</span></code></pre>
+</section>
+<section id="hql" class="titleslide slide level1"><h1><span class="header-section-number">9</span> HQL</h1></section><section id="hibernate-query-language" class="slide level2">
+<h2><span class="header-section-number">9.1</span> Hibernate Query Language</h2>
+<ul>
+<li>Similar a SQL.</li>
+<li>Pero consulta objetos y devuelve objetos.</li>
+</ul>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> c <span class="kw">FROM</span> Cliente c <span class="kw">WHERE</span> c.pedidos[<span class="dv">0</span>]&lt;&gt;NULL</code></pre>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">SELECT</span> <span class="kw">new</span> Venta(c, p) <span class="kw">FROM</span> Cliente c, Pedido p</code></pre>
+</section><section id="objeto-query" class="slide level2">
+<h2><span class="header-section-number">9.2</span> Objeto Query</h2>
+<pre class="sourceCode java"><code class="sourceCode java">Query q = session.<span class="fu">createQuery</span>(<span class="st">&quot;...&quot;</span>);
+q.<span class="fu">list</span>();</code></pre>
+<ul>
+<li>Admite paginación:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">q.<span class="fu">setMaxResults</span>(<span class="dv">5</span>);
+q.<span class="fu">setFirstResult</span>(<span class="dv">0</span>);</code></pre>
+<ul>
+<li>Admite prepared statements:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">q.<span class="fu">setParameter</span>(<span class="dv">0</span>, <span class="st">&quot;Madrid&quot;</span>);</code></pre>
+<ul>
+<li>Admite filtros de herencia:</li>
+</ul>
+<pre class="sourceCode sql"><code class="sourceCode sql"><span class="kw">WHERE</span> c.class = <span class="st">&#39;Subclase&#39;</span></code></pre>
+</section><section id="objeto-criteria" class="slide level2">
+<h2><span class="header-section-number">9.3</span> Objeto Criteria</h2>
+<ul>
+<li>Genera filtros WHERE programáticamente:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Criteria c = session.<span class="fu">createCriteria</span>(Cliente.<span class="fu">class</span>);
+c.<span class="fu">list</span>();</code></pre>
+<ul>
+<li>Podemos añadir restricciones:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">c.<span class="fu">add</span>(Restrictions.<span class="fu">between</span>(<span class="st">&quot;edad&quot;</span>, <span class="dv">25</span>, <span class="dv">35</span>) );
+c.<span class="fu">add</span>(Restrictions.<span class="fu">ilike</span>(<span class="st">&quot;nombre&quot;</span>, <span class="st">&quot;%F%&quot;</span>) );</code></pre>
+<ul>
+<li>Podemos añadir un objeto de ejemplo:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Cliente cli = <span class="kw">new</span> <span class="fu">Cliente</span>(<span class="st">&quot;Oliver&quot;</span>);
+c.<span class="fu">add</span>( Example.<span class="fu">create</span>(cli) );</code></pre>
+</section>
+
+<!--footer id="footer">
+  <h4 class="author"> Adolfo Sanz De Diego  - Noviembre 2013</h4>
+</footer-->
+
+<!-- deck goto extension html -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck hash extension html -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- deck navigation extension html -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck status extension html -->
+<p class="deck-status">
+  <span class="deck-status-current"></span> / <span class="deck-status-total"></span>
+</p>
+
+<!-- deck core js  -->
+<script src="./js/jquery-1.7-min.js"></script>
+<script src="./js/deck-core.js"></script>
+
+<!-- deck extension js -->
+<script src="./js/deck-extension/goto.js"></script>
+<script src="./js/deck-extension/hash.js"></script>
+<script src="./js/deck-extension/menu.js"></script>
+<script src="./js/deck-extension/navigation.js"></script>
+<script src="./js/deck-extension/status.js"></script>
+<script src="./js/deck-extension/search.js"></script>
+<script src="./js/deck-extension/pointer.js"></script>
+
+<!-- Initialize the deck. -->
+<script src="./js/init-deck.js"></script>
+
+</body>
+</html>

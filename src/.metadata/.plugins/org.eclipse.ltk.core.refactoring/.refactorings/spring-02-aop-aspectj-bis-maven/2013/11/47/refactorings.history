@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;aop.xml&apos; to &apos;spring-02-aop-aspectj-bis-maven/src/main/java/(default package)&apos;&#x0A;- Original project: &apos;spring-02-aop-aspectj-bis-maven&apos;&#x0A;- Destination element: &apos;spring-02-aop-aspectj-bis-maven/src/main/java/(default package)&apos;&#x0A;- Original element: &apos;aop.xml&apos;" description="Copy file" destination="/src\/main\/java&lt;" element1="src/main/resources/aop.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1385023963353" units="0" version="1.0"/>
+</session>

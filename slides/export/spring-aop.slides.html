@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="generator" content="pandoc" />
+  <meta name="description" content="Spring AOP" />
+  <meta name="author" content="Adolfo Sanz De Diego" />
+  <meta name="copyright" content="Spring AOP - Adolfo Sanz De Diego -  Noviembre 2013" /> 
+  <title>Spring AOP</title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+
+  <!-- deck core css -->
+  <link rel="stylesheet" href="./css/deck-core.css">
+
+  <!-- deck extensions css -->
+  <link rel="stylesheet" href="./css/deck-extension/goto.css">
+  <link rel="stylesheet" href="./css/deck-extension/hash.css">
+  <link rel="stylesheet" href="./css/deck-extension/menu.css">
+  <link rel="stylesheet" href="./css/deck-extension/navigation.css">
+  <link rel="stylesheet" href="./css/deck-extension/status.css">
+  <link rel="stylesheet" href="./css/deck-extension/pointer.css">
+
+  <!-- deck slide theme css -->
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-theme/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/mnml.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/neon.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/swiss.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  -->
+
+  <!-- deck slide transition css -->
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-transition/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/fade.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/horizontal.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/vertical.css">
+  -->
+
+  <!-- custom css just for this page -->
+  <link rel="stylesheet" href="./css/deck-custom.css">
+
+  <!-- modernizr deck js  -->
+  <script src="./js/modernizr-custom.js"></script>
+
+</head>
+<body class="deck-container">
+<section class="slide">
+  <h2 id="titlepage">Spring AOP</h2>
+  <h3 id="documentauthor">Adolfo Sanz De Diego</h3>
+  <h4 id="documentdate">Noviembre 2013</h4>
+</section>
+
+<section id="creditos" class="titleslide slide level1"><h1><span class="header-section-number">1</span> Creditos</h1></section><section id="pronoide" class="slide level2">
+<h2><span class="header-section-number">1.1</span> Pronoide</h2>
+<figure>
+<img src="../img/logo-pronoide.png" alt="Pronoide" /><figcaption>Pronoide</figcaption>
+</figure>
+<ul>
+<li><p>Pronoide consolida sus servicios de formación superando las <strong>22.000 horas impartidas</strong> en más de 500 cursos (Diciembre 2011)</p></li>
+<li><p>En la vorágine de <strong>tecnologías y marcos de trabajo existentes</strong>, una empresa dedica demasiado esfuerzo en analizar, comparar y finalmente decidir cuáles son los pilares sobre los que construir sus proyectos.</p></li>
+<li><p>Nuestros Servicios de Formación permiten ayudarle en esta tarea, transfiriéndoles nuestra <strong>experiencia real de más de 10 años</strong>.</p></li>
+</ul>
+</section><section id="autor" class="slide level2">
+<h2><span class="header-section-number">1.2</span> Autor</h2>
+<ul>
+<li><p><strong>Adolfo Sanz De Diego</strong></p></li>
+<li><p>Mi nick: <strong>asanzdiego</strong></p></li>
+<li><p>AboutMe: <strong><a href="http://about.me/asanzdiego">http://about.me/asanzdiego</a></strong></p>
+<ul>
+<li>GitHub: <a href="http://github.com/asanzdiego/">http://github.com/asanzdiego/</a></li>
+<li>Twitter: <a href="http://twitter.com/asanzdiego">http://twitter.com/asanzdiego</a></li>
+<li>Blog: <a href="http://asanzdiego.blogspot.com.es">http://asanzdiego.blogspot.com.es</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">http://www.linkedin.com/in/asanzdiego</a></li>
+</ul></li>
+</ul>
+</section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">1.3</span> Licencia</h2>
+<ul>
+<li>Estas <strong>transparencias</strong> están bajo una licencia:
+<ul>
+<li>Creative Commons Reconocimiento-CompartirIgual 3.0 <a href="http://creativecommons.org/licenses/by-sa/3.0/es/">http://creativecommons.org/licenses/by-sa/3.0/es/</a></li>
+</ul></li>
+<li>El <strong>código fuente</strong> de los programas están bajo una licencia:
+<ul>
+<li>GPL 3.0 <a href="http://www.viti.es/gnu/licenses/gpl.html">http://www.viti.es/gnu/licenses/gpl.html</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="introducción" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Introducción</h1></section><section id="aspect-oriented-programming" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Aspect Oriented Programming</h2>
+<ul>
+<li>Al igual que existe una programación orientada a objetos, cuya pieza más significativa son las clases, se ha extendido el concepto de <strong>programación orientada a aspectos</strong>, considerando un aspecto una funcionalidad o tarea genérica que puede afectar a muchas clases.</li>
+</ul>
+<figure>
+<img src="../img/aop-overview.png" alt="AOP Overview" /><figcaption>AOP Overview</figcaption>
+</figure>
+</section><section id="cross-cutting-concern" class="slide level2">
+<h2><span class="header-section-number">2.2</span> Cross-cutting concern</h2>
+<ul>
+<li>Los cross-cutting concern, o servicios horizontales, son <strong>funcionalidades que afectan a todas las clases de la aplicación</strong>, como el logging, la transaccionalidad o la seguridad.</li>
+</ul>
+<figure>
+<img src="../img/aop-cross-cutting-concern.png" alt="AOP Cross-cutting Concern" /><figcaption>AOP Cross-cutting Concern</figcaption>
+</figure>
+</section>
+<section id="conceptos-generales" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Conceptos Generales</h1></section><section id="aspect-join-point-advice-y-pointcut" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Aspect, Join Point, Advice y Pointcut</h2>
+<ul>
+<li><strong>Aspect</strong>:
+<ul>
+<li>Es la funcionalidad del servicio horizontal que se quiere implementar.</li>
+</ul></li>
+<li><strong>Join Point</strong>:
+<ul>
+<li>Es el punto de anclaje en donde, en tiempo de ejecución, se aplica el aspecto.</li>
+</ul></li>
+<li><strong>Advice</strong>:
+<ul>
+<li>Es la acción ejecutada por un aspecto en un determinado Join Point.</li>
+</ul></li>
+<li><strong>Pointcut</strong>:
+<ul>
+<li>Es una expresión que selecciona Join Points.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/aop-join-points.png" alt="AOP Join Points" /><figcaption>AOP Join Points</figcaption>
+</figure>
+</section><section id="introduction-target-object-proxy" class="slide level2">
+<h2><span class="header-section-number">3.2</span> Introduction, Target Object, Proxy</h2>
+<ul>
+<li><strong>Introduction</strong>:
+<ul>
+<li>Permite declarar métodos o campos nuevos en un tipo.</li>
+</ul></li>
+<li><strong>Target Object</strong>:
+<ul>
+<li>Objeto observado por uno o más aspectos.</li>
+</ul></li>
+<li><strong>Proxy</strong>:
+<ul>
+<li>Objeto que encapsula internamente un target object.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/aop-proxy.png" alt="AOP Proxy" /><figcaption>AOP Proxy</figcaption>
+</figure>
+</section><section id="weaving" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Weaving</h2>
+<ul>
+<li><strong>Weaving</strong>:
+<ul>
+<li>Es la acción de enlazar los aspectos, que puede hacerse en tiempo de compilación, de carga, o de ejecución.</li>
+</ul></li>
+</ul>
+<figure>
+<img src="../img/aop-weaver.png" alt="AOP Weaver" /><figcaption>AOP Weaver</figcaption>
+</figure>
+</section><section id="spring-aop" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Spring AOP</h2>
+<ul>
+<li><p>En Spring AOP <strong>sólo se permiten join points de ejecución de métodos públicos</strong>, para interceptar métodos protegidos o privados utilizar AspectJ.</p></li>
+<li><p>En Spring AOP <strong>no se pueden interceptar la lectura y/o la actualización de atributos</strong>, para ello utilizar AspectJ.</p></li>
+<li><p>Spring AOP es menos potente que AspectJ, pues está enfocado en resolver los problemas más habituales de una forma <strong>integrada con el contenedor de IoC</strong>.</p></li>
+<li><p>Se pueden definir aspectos con la anotación @AspectJ que necesita Java 5, o puede usarse el fichero de configuración.</p></li>
+</ul>
+</section><section id="fichero-de-configuración" class="slide level2">
+<h2><span class="header-section-number">3.5</span> Fichero de configuración</h2>
+<ul>
+<li>Para poder usarla, deberemos introducir:
+<ul>
+<li><strong>http://www.springframework.org/schema/aop</strong></li>
+<li><strong>http://www.springframework.org/schema/aop/spring-aop-2.0.xsd</strong></li>
+</ul></li>
+<li>Se utiliza la etiqueta <strong>&lt;aop:aspect/&gt;</strong> a la que se le índica un <strong>id</strong> y el <strong>bean</strong> a la que hace referencia (la que será el aspecto en Java).</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:config&gt;</span>
+  <span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;myAspect&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+  ...
+  <span class="kw">&lt;/aop:aspect&gt;</span>
+<span class="kw">&lt;/aop:config&gt;</span>
+<span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;aBean&quot;</span><span class="ot"> class=</span><span class="st">&quot;...&quot;</span><span class="kw">&gt;</span>
+...
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Todos los aspectos son <strong>Singleton</strong>.</li>
+</ul>
+</section><section id="habilitar-la-anotación-aspect" class="slide level2">
+<h2><span class="header-section-number">3.6</span> Habilitar la anotación @Aspect</h2>
+<ul>
+<li>Dentro del archivo de configuración incluir:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspectj-autoproxy/&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> Espectador {
+
+  <span class="kw">public</span> <span class="fu">Espectador</span>(){}
+
+  <span class="co">//Nuevo método para definir el pointcut</span>
+  <span class="fu">@Pointcut</span>(<span class="st">&quot;execution(* *.interpretar(..))&quot;</span>)
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">realizar</span>(){}
+
+  <span class="co">//La anotación se apoya en un método creado donde se encuentra el pointcut</span>
+  <span class="fu">@Around</span>(<span class="st">&quot;realizar()&quot;</span>)
+  <span class="kw">public</span> Object <span class="fu">miAdviceAspectJ</span>(ProceedingJoinPoint joinpoint) <span class="kw">throws</span> Throwable{
+    Object retVal = <span class="kw">null</span>;
+    <span class="kw">try</span> {
+      retVal= joinpoint.<span class="fu">proceed</span>();
+      <span class="kw">this</span>.<span class="fu">aplaudir</span>();
+    } <span class="kw">catch</span> (Throwable e) {
+      <span class="kw">this</span>.<span class="fu">solicitarDevolucion</span>();
+      <span class="kw">throw</span> e;
+    }
+    <span class="kw">return</span> retVal;
+  }
+}</code></pre>
+</section>
+<section id="pointcuts" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Pointcuts</h1></section><section id="definición" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Definición</h2>
+<ul>
+<li><p>Un Pointcut puede definirse dentro de un aspecto, sólo visible para él, o puede definirse directamente bajo &lt;aop:config&gt; para estar disponible de forma global.</p></li>
+<li><p>Ejemplo: llamadas de todos los métodos públicos de las clases del paquete com.ats.test.</p></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:pointcut</span><span class="ot"> id=</span><span class="st">&quot;businessService&quot;</span><span class="ot"> expression=</span><span class="st">&quot;execution(public com.ats.test.*.*(..))&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="lenguaje-de-definición-de-pointcuts" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Lenguaje de definición de Pointcuts</h2>
+<ul>
+<li>El lenguaje de definición de PointCuts es el de AspectJ, y está estructurado así:</li>
+</ul>
+<pre><code>[execution|within|this|target|args](
+  modifiers-pattern?
+  return-type-pattern
+  declaring-type-pattern?
+  name-pattern(param-pattern)
+  throws-pattern?
+)</code></pre>
+<ul>
+<li><p><strong>'*'</strong> es un comodín para los tipos de acceso, nombres de clase y métodos</p></li>
+<li><p><strong>'..'</strong> en los argumentos de la llamada, se entiende que es con cualquier tipo de argumentos.</p></li>
+<li><p>Se pueden combinar con <strong>'&amp;&amp;'</strong>, <strong>'||'</strong> y <strong>'!'</strong>, aunque en el XML debe usarse <strong>'and'</strong>, <strong>'or'</strong> y <strong>'not'</strong>.</p></li>
+</ul>
+</section><section id="tipos-de-pointcut-soportados-por-spring" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Tipos de pointcut soportados por Spring</h2>
+<ul>
+<li><p><strong>execution</strong>: para seleccionar la ejecución de un método. Es el más usado.</p></li>
+<li><p><strong>within</strong>: para seleccionar la ejecución de algún metódo del tipo especificado.</p></li>
+<li><p><strong>this</strong>: para seleccionar la ejecución de algún método de un bean que implemente una interfaz del tipo especificado.</p></li>
+<li><p><strong>target</strong>: para seleccionar la ejecución de algún método de un bean cuyo target object implemente una interfaz del tipo especificado.</p></li>
+<li><p><strong>args</strong>: para seleccionar la ejecución de algún método cuyos argumentos sean instancias de los tipos especificado.</p></li>
+</ul>
+<p><strong>NOTA</strong>: En Spring la diferencia entre this y target, es que el primero intercepta el proxy y el segundo el objeto encapsulado dentro del proxy.</p>
+</section>
+<section id="tipos-de-advice" class="titleslide slide level1"><h1><span class="header-section-number">5</span> Tipos de Advice</h1></section><section id="before-advice" class="slide level2">
+<h2><span class="header-section-number">5.1</span> Before Advice</h2>
+<ul>
+<li>Se ejecuta justo antes del JoinPoint.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;beforeExample&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;aop:before</span><span class="ot"> pointcut-ref=</span><span class="st">&quot;dataAccessOperation&quot;</span><span class="ot"> method=</span><span class="st">&quot;doAccessCheck&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/aop:aspect&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.aspectj.lang.annotation.Aspect;</span>
+<span class="kw">import org.aspectj.lang.annotation.Before;</span>
+
+<span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> BeforeExample {
+
+  <span class="fu">@Before</span>(<span class="st">&quot;execution(* com.xyz.myapp.dao.*.*(..))&quot;</span>)
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">doAccessCheck</span>() {
+    <span class="co">// ...</span>
+  }
+}</code></pre>
+</section><section id="after-returning-advice" class="slide level2">
+<h2><span class="header-section-number">5.2</span> After returning Advice</h2>
+<ul>
+<li>Igual que el before, salvo que podemos indicar que al aspecto se le devuelva el tipo que retorna el método interceptado.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;afterReturningExample&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;aop:after-returning</span><span class="ot"> pointcut=</span><span class="st">&quot;execution(* com.xyz.myapp.dao.*.*(..))&quot;</span><span class="ot"> method=</span><span class="st">&quot;doAccessCheck&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/aop:aspect&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.aspectj.lang.annotation.Aspect;</span>
+<span class="kw">import org.aspectj.lang.annotation.AfterReturning;</span>
+
+<span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> AfterReturningExample {
+
+  <span class="fu">@AfterReturning</span>(pointcut=<span class="st">&quot;execution(* com.xyz.myapp.dao.*.*(..))&quot;</span>, returning=<span class="st">&quot;retVal&quot;</span>)
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">doAccessCheck</span>(Object retVal) {
+    <span class="co">// ...</span>
+  }
+}</code></pre>
+</section><section id="after-throwing-advice" class="slide level2">
+<h2><span class="header-section-number">5.3</span> After throwing Advice</h2>
+<ul>
+<li>Similar al after returning, pudiendo indicar que se nos pase la excepción lanzada.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;afterThrowingExample&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;aop:after-throwing</span><span class="ot"> pointcut-ref=</span><span class="st">&quot;dataAccessOperation&quot;</span><span class="ot"> throwing=</span><span class="st">&quot;dataAccessEx&quot;</span><span class="ot"> method=</span><span class="st">&quot;doRecoveryActions&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/aop:aspect&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.aspectj.lang.annotation.Aspect;</span>
+<span class="kw">import org.aspectj.lang.annotation.AfterThrowing;</span>
+
+<span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> AfterThrowingExample {
+
+  <span class="fu">@AfterThrowing</span>(
+    pointcut=<span class="st">&quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&quot;</span>,
+    throwing=<span class="st">&quot;ex&quot;</span>)
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">doRecoveryActions</span>(DataAccessException ex) {
+    <span class="co">// ...</span>
+  }
+}</code></pre>
+</section><section id="after-finally-advice" class="slide level2">
+<h2><span class="header-section-number">5.4</span> After (finally) Advice</h2>
+<ul>
+<li>Agrupa los 2 casos anteriores.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;afterThrowingExample&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;aop:after-throwing</span><span class="ot"> pointcut-ref=</span><span class="st">&quot;dataAccessOperation&quot;</span><span class="ot"> throwing=</span><span class="st">&quot;dataAccessEx&quot;</span><span class="ot"> method=</span><span class="st">&quot;doRecoveryActions&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/aop:aspect&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.aspectj.lang.annotation.Aspect;</span>
+<span class="kw">import org.aspectj.lang.annotation.After;</span>
+
+<span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> AfterFinallyExample {
+
+  <span class="fu">@After</span>(<span class="st">&quot;com.xyz.myapp.SystemArchitecture.dataAccessOperation()&quot;</span>)
+  <span class="kw">public</span> <span class="dt">void</span> <span class="fu">doReleaseLock</span>() {
+    <span class="co">// ...</span>
+  }
+}</code></pre>
+</section><section id="around-advice" class="slide level2">
+<h2><span class="header-section-number">5.5</span> Around Advice</h2>
+<ul>
+<li>Indica que se ejecute el aspecto antes y después del jointpoint.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;aop:aspect</span><span class="ot"> id=</span><span class="st">&quot;aroundExample&quot;</span><span class="ot"> ref=</span><span class="st">&quot;aBean&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;aop:around</span><span class="ot"> pointcut-ref=</span><span class="st">&quot;businessService&quot;</span><span class="ot"> method=</span><span class="st">&quot;doBasicProfiling&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/aop:aspect&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">import org.aspectj.lang.annotation.Aspect;</span>
+<span class="kw">import org.aspectj.lang.annotation.Around;</span>
+<span class="kw">import org.aspectj.lang.ProceedingJoinPoint;</span>
+
+<span class="fu">@Aspect</span>
+<span class="kw">public</span> <span class="kw">class</span> AroundExample {
+
+  <span class="fu">@Around</span>(<span class="st">&quot;com.xyz.myapp.SystemArchitecture.businessService()&quot;</span>)
+  <span class="kw">public</span> Object <span class="fu">doBasicProfiling</span>(ProceedingJoinPoint pjp) <span class="kw">throws</span> Throwable {
+    <span class="co">// start stopwatch</span>
+    Object retVal = pjp.<span class="fu">proceed</span>();
+    <span class="co">// stop stopwatch</span>
+    <span class="kw">return</span> retVal;
+  }
+}</code></pre>
+</section><section id="parámetros-de-un-advice" class="slide level2">
+<h2><span class="header-section-number">5.6</span> Parámetros de un advice</h2>
+<ul>
+<li><p>En un advice, se pueden especificar los parámetros que esperamos recibir en el método del aspecto asociado.</p></li>
+<li>Los métodos de los advices pueden recibir como primer parámetro uno del tipo <strong>org.aspectj.lang.JoinPoint</strong>, que nos permiten una serie de accesos como:
+<ul>
+<li><strong>getArgs()</strong>, retorna los parámetros del método que se ha interceptado.</li>
+<li><strong>getThis()</strong>, retorna el objeto proxy.</li>
+<li><strong>getTarget()</strong>, retorna el objeto encapsulado por el proxy.</li>
+<li><strong>getSignature()</strong>, devuelve una descripción del método que se ha interceptado.</li>
+<li><strong>toString()</strong>, que imprime información del método interceptado.</li>
+</ul></li>
+</ul>
+</section>
+
+<!--footer id="footer">
+  <h4 class="author"> Adolfo Sanz De Diego  - Noviembre 2013</h4>
+</footer-->
+
+<!-- deck goto extension html -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck hash extension html -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- deck navigation extension html -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck status extension html -->
+<p class="deck-status">
+  <span class="deck-status-current"></span> / <span class="deck-status-total"></span>
+</p>
+
+<!-- deck core js  -->
+<script src="./js/jquery-1.7-min.js"></script>
+<script src="./js/deck-core.js"></script>
+
+<!-- deck extension js -->
+<script src="./js/deck-extension/goto.js"></script>
+<script src="./js/deck-extension/hash.js"></script>
+<script src="./js/deck-extension/menu.js"></script>
+<script src="./js/deck-extension/navigation.js"></script>
+<script src="./js/deck-extension/status.js"></script>
+<script src="./js/deck-extension/search.js"></script>
+<script src="./js/deck-extension/pointer.js"></script>
+
+<!-- Initialize the deck. -->
+<script src="./js/init-deck.js"></script>
+
+</body>
+</html>

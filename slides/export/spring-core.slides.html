@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=1024, user-scalable=no">
+  <meta name="generator" content="pandoc" />
+  <meta name="description" content="Spring Core" />
+  <meta name="author" content="Adolfo Sanz De Diego" />
+  <meta name="copyright" content="Spring Core - Adolfo Sanz De Diego -  Noviembre 2013" /> 
+  <title>Spring Core</title>
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; }
+code > span.dt { color: #902000; }
+code > span.dv { color: #40a070; }
+code > span.bn { color: #40a070; }
+code > span.fl { color: #40a070; }
+code > span.ch { color: #4070a0; }
+code > span.st { color: #4070a0; }
+code > span.co { color: #60a0b0; font-style: italic; }
+code > span.ot { color: #007020; }
+code > span.al { color: #ff0000; font-weight: bold; }
+code > span.fu { color: #06287e; }
+code > span.er { color: #ff0000; font-weight: bold; }
+  </style>
+
+  <!-- deck core css -->
+  <link rel="stylesheet" href="./css/deck-core.css">
+
+  <!-- deck extensions css -->
+  <link rel="stylesheet" href="./css/deck-extension/goto.css">
+  <link rel="stylesheet" href="./css/deck-extension/hash.css">
+  <link rel="stylesheet" href="./css/deck-extension/menu.css">
+  <link rel="stylesheet" href="./css/deck-extension/navigation.css">
+  <link rel="stylesheet" href="./css/deck-extension/status.css">
+  <link rel="stylesheet" href="./css/deck-extension/pointer.css">
+
+  <!-- deck slide theme css -->
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-theme/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/mnml.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/neon.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/swiss.css">
+  <link rel="stylesheet" href="./css/deck-slide-theme/web.css">
+  -->
+
+  <!-- deck slide transition css -->
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <!--
+  <link rel="stylesheet" href="./css/deck-slide-transition/beamer.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/cube.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/fade.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/horizontal.css">
+  <link rel="stylesheet" href="./css/deck-slide-transition/vertical.css">
+  -->
+
+  <!-- custom css just for this page -->
+  <link rel="stylesheet" href="./css/deck-custom.css">
+
+  <!-- modernizr deck js  -->
+  <script src="./js/modernizr-custom.js"></script>
+
+</head>
+<body class="deck-container">
+<section class="slide">
+  <h2 id="titlepage">Spring Core</h2>
+  <h3 id="documentauthor">Adolfo Sanz De Diego</h3>
+  <h4 id="documentdate">Noviembre 2013</h4>
+</section>
+
+<section id="creditos" class="titleslide slide level1"><h1><span class="header-section-number">1</span> Creditos</h1></section><section id="pronoide" class="slide level2">
+<h2><span class="header-section-number">1.1</span> Pronoide</h2>
+<figure>
+<img src="../img/logo-pronoide.png" alt="Pronoide" /><figcaption>Pronoide</figcaption>
+</figure>
+<ul>
+<li><p>Pronoide consolida sus servicios de formación superando las <strong>22.000 horas impartidas</strong> en más de 500 cursos (Diciembre 2011)</p></li>
+<li><p>En la vorágine de <strong>tecnologías y marcos de trabajo existentes</strong>, una empresa dedica demasiado esfuerzo en analizar, comparar y finalmente decidir cuáles son los pilares sobre los que construir sus proyectos.</p></li>
+<li><p>Nuestros Servicios de Formación permiten ayudarle en esta tarea, transfiriéndoles nuestra <strong>experiencia real de más de 10 años</strong>.</p></li>
+</ul>
+</section><section id="autor" class="slide level2">
+<h2><span class="header-section-number">1.2</span> Autor</h2>
+<ul>
+<li><p><strong>Adolfo Sanz De Diego</strong></p></li>
+<li><p>Mi nick: <strong>asanzdiego</strong></p></li>
+<li><p>AboutMe: <strong><a href="http://about.me/asanzdiego">http://about.me/asanzdiego</a></strong></p>
+<ul>
+<li>GitHub: <a href="http://github.com/asanzdiego/">http://github.com/asanzdiego/</a></li>
+<li>Twitter: <a href="http://twitter.com/asanzdiego">http://twitter.com/asanzdiego</a></li>
+<li>Blog: <a href="http://asanzdiego.blogspot.com.es">http://asanzdiego.blogspot.com.es</a></li>
+<li>LinkedIn: <a href="http://www.linkedin.com/in/asanzdiego">http://www.linkedin.com/in/asanzdiego</a></li>
+</ul></li>
+</ul>
+</section><section id="licencia" class="slide level2">
+<h2><span class="header-section-number">1.3</span> Licencia</h2>
+<ul>
+<li>Estas <strong>transparencias</strong> están bajo una licencia:
+<ul>
+<li>Creative Commons Reconocimiento-CompartirIgual 3.0 <a href="http://creativecommons.org/licenses/by-sa/3.0/es/">http://creativecommons.org/licenses/by-sa/3.0/es/</a></li>
+</ul></li>
+<li>El <strong>código fuente</strong> de los programas están bajo una licencia:
+<ul>
+<li>GPL 3.0 <a href="http://www.viti.es/gnu/licenses/gpl.html">http://www.viti.es/gnu/licenses/gpl.html</a></li>
+</ul></li>
+</ul>
+</section>
+<section id="introducción" class="titleslide slide level1"><h1><span class="header-section-number">2</span> Introducción</h1></section><section id="orígenes" class="slide level2">
+<h2><span class="header-section-number">2.1</span> Orígenes</h2>
+<ul>
+<li>Los primeros componentes fueron escritos por <strong>Rod Johnson en el año 2000</strong>.</li>
+<li>Mientras escribía el libro <strong>Expert One-on-one J2EE Design And Development (Programmer to programmer)</strong>.</li>
+<li>Rod pensó que J2EE podín llegar a ser <strong>más simple y consistente</strong>.</li>
+<li>El proyecto fue creado en Sourceforge en <strong>febrero de 2003</strong>.</li>
+<li>Después de trabajar en su desarrollo durante más de un año se lanzó una primera versión (1.0) en <strong>marzo de 2004</strong>.</li>
+<li>Hoy en día es <strong>uno de los framworks java más utilizados</strong> en entornos empresariales.</li>
+</ul>
+</section><section id="por-qué-spring" class="slide level2">
+<h2><span class="header-section-number">2.2</span> ¿Por qué Spring?</h2>
+<ul>
+<li>Spring se centra en proporcionar mecanismos de <strong>gestión de los objetos</strong> de negocio.</li>
+<li>Esta estructurado en capas, <strong>puede introducirse en proyectos de forma gradual</strong>, usando las capas que nos interesen, permaneciendo toda la arquitectura consistente.</li>
+<li>Spring es un framework idóneo para proyectos creados desde cero y orientados a pruebas unitarias.</li>
+</ul>
+</section>
+<section id="arquitectura" class="titleslide slide level1"><h1><span class="header-section-number">3</span> Arquitectura</h1></section><section id="esquema" class="slide level2">
+<h2><span class="header-section-number">3.1</span> Esquema</h2>
+<figure>
+<img src="../img/spring-overview.png" alt="Arquitectura" /><figcaption>Arquitectura</figcaption>
+</figure>
+</section><section id="core-container" class="slide level2">
+<h2><span class="header-section-number">3.2</span> Core Container</h2>
+<ul>
+<li>Módulos <strong>Core y Beans</strong>
+<ul>
+<li>Proveen las <strong>partes fundamentales</strong> del framework incluyendo:
+<ul>
+<li>IoC (Inversion of Control)</li>
+<li>DI (Dependency Injection)</li>
+</ul></li>
+<li>Incluyen la clase <strong>BeanFactory</strong> que es una implementación sofisticada de los patrones de diseño Abstract Factory y Factory Method eliminando necesidad de programar Singletons.</li>
+</ul></li>
+<li>Módulo <strong>Context</strong>
+<ul>
+<li>A través de este módulo <strong>podemos acceder a objetos</strong> de una forma similar a JNDI (Java Naming and Directory Interface)</li>
+<li>Añade, entre otros, soporte para <strong>internacionalización</strong>, propagación de eventos, creación de <strong>contextos</strong> de una forma transparente.</li>
+</ul></li>
+<li>Módulo <strong>Expression Language</strong>
+<ul>
+<li>Es una <strong>extensión del unified EL</strong> (Expressin Language) según la especificación JSP 2.1</li>
+<li>Proporciona una poderosa herramienta para consultar y manipular objetos del contenedor.</li>
+<li>El lenguage soporta, entre otros, <strong>settings y gettings</strong> de valores de propiedades, invocación de métodos, operadores lógicos y aritméticos.</li>
+</ul></li>
+</ul>
+</section><section id="data-access-integration" class="slide level2">
+<h2><span class="header-section-number">3.3</span> Data Access / Integration</h2>
+<ul>
+<li>Módulo <strong>JDBC</strong>
+<ul>
+<li>Proporciona una capa de abstracción JDBC que nos libera de la necesidad de crear código JDBC tedioso.</li>
+</ul></li>
+<li>Módulo <strong>ORM</strong> (Object Relational Mapping)
+<ul>
+<li>Proporciona capas de integración para el mapeo de Bases de Datos relacionales.</li>
+<li>Trabaja con <strong>JPA, JDO, Hibernate e iBatis</strong>.</li>
+</ul></li>
+<li>Módulo <strong>OXM</strong> (Object/XML)
+<ul>
+<li>Proporciona una capa de abstracción que soporta el mapeo de XML a objetos</li>
+<li>Trabaja con <strong>JAXB, Castor, XMLBeans, JiBX y XStream</strong>.</li>
+</ul></li>
+<li>Módulo <strong>JMS</strong> (Java Message Service)
+<ul>
+<li>Contiene mecanismos para producir y consumir mensajes.</li>
+</ul></li>
+<li>Módulo <strong>Transaction</strong>
+<ul>
+<li>Soporta la gestión de transacciones para las clases que implementan interfaces especiales y para POJOs (Plain Old Java Objets).</li>
+</ul></li>
+</ul>
+</section><section id="web" class="slide level2">
+<h2><span class="header-section-number">3.4</span> Web</h2>
+<ul>
+<li>Módulo <strong>Web</strong>
+<ul>
+<li>Proporciona integración básica orientada a Web.</li>
+<li>También provee la inicialización del contenedor IoC utilizando ServletListeners y el ApplicationContext.</li>
+</ul></li>
+<li>Módulo <strong>Servlet</strong>
+<ul>
+<li>Contiene la implementación MVC (Modelo Vista Controlador) de Spring para aplicaciones Web.</li>
+</ul></li>
+<li>Módulo <strong>Struts</strong>
+<ul>
+<li>Contiene clases de soporte para integrarse con la capa Web de Struts clásica.</li>
+<li>Este soporte desde la versión 3.0 de Spring (la versión actual) está <strong>deprecated</strong></li>
+<li>Se recomienda migrar migrar las aplicaciones a Struts 2.0 o buscar una solución con Spring MVC</li>
+</ul></li>
+<li>Módulo <strong>Portlet</strong>
+<ul>
+<li>Proporciona la implementación MVC para ser utilizada en un entorno de portlets.</li>
+</ul></li>
+</ul>
+</section><section id="aop-e-instrumentation" class="slide level2">
+<h2><span class="header-section-number">3.5</span> AOP e Instrumentation</h2>
+<ul>
+<li>Módulo <strong>AOP</strong> (Aspect Oriented Programming)
+<ul>
+<li>Proporciona una implementación para trabajar con programación orientada a aspectos.</li>
+<li>Compatible con la <strong>Alianza AOP</strong>, para definir puntos de acceso, interceptores, proxies dinámicos, etc..</li>
+</ul></li>
+<li>Módulo <strong>Aspects</strong>
+<ul>
+<li>Proporciona integración con AspectJ.</li>
+</ul></li>
+<li>Módulo <strong>Instrumentation</strong>
+<ul>
+<li>Proporciona soporte a clases de instrumentación e implementaciones de classloaders que se utilizan en determinados servidores de aplicaciones.</li>
+</ul></li>
+</ul>
+</section><section id="testing" class="slide level2">
+<h2><span class="header-section-number">3.6</span> Testing</h2>
+<ul>
+<li>Módulo <strong>Test</strong>
+<ul>
+<li>Soporta el testeo de componentes Spring con <strong>JUnit y TestNG</strong>.</li>
+<li>Proporciona una carga consistente de Spring <strong>ApplicationContexts</strong> y almacenamiento en caché de esos contextos.</li>
+<li>También proporciona <strong>objetos mock</strong> que se pueden utilizar para probar el código en forma aislada.</li>
+</ul></li>
+</ul>
+</section><section id="otros-proyectos-de-spring" class="slide level2">
+<h2><span class="header-section-number">3.7</span> Otros proyectos de Spring</h2>
+<ul>
+<li>Proyecto <strong>Spring Web Flow</strong>
+<ul>
+<li>Un diseñador de flujos de navegación de alto nivel para aplicaciones web.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Web Services</strong>
+<ul>
+<li>Especializado en la creación de Servicios Web de forma flexible.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Security</strong>
+<ul>
+<li>Realiza funciones de control de acceso y autenticación personalizada.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Android</strong>
+<ul>
+<li>Intenta simplificar el desarrollo de aplicaciones Android nativas.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Mobile</strong>
+<ul>
+<li>Intenta simplificar el desarrollo de aplicaciones web para móviles.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Social</strong>
+<ul>
+<li>Permite conectar nuestras aplicaciones con proveedores SaaS (Software as a Service) como Facebook and Twitter.</li>
+</ul></li>
+<li>Proyecto <strong>Spring Data</strong>
+<ul>
+<li>Intenta simplificar la creación de aplicaciones Spring que utilizan nuevas tecnologías de acceso como Bases de Datos no relacionales y servicios de datos basados en la nube.</li>
+</ul></li>
+</ul>
+</section>
+<section id="conceptos-fundamentales" class="titleslide slide level1"><h1><span class="header-section-number">4</span> Conceptos Fundamentales</h1></section><section id="contenedor-de-inversión-de-control" class="slide level2">
+<h2><span class="header-section-number">4.1</span> Contenedor de Inversión de Control</h2>
+<ul>
+<li><p>Implementación del <strong>Principio de Hollywood</strong> cuyo nombre proviene de las típicas respuestas que se les dan a los actores amateurs: <strong>no nos llames; nosotros te llamaremos</strong>.</p></li>
+<li><p>Es el <strong>contenedor de IoC quien devuelve las instancias de las clases</strong> por nombre, gestionando sus propiedades y sus relaciones.</p></li>
+</ul>
+</section><section id="inyección-de-dependencias" class="slide level2">
+<h2><span class="header-section-number">4.2</span> Inyección de Dependencias</h2>
+<ul>
+<li><p><strong>Elimina el acoplamiento</strong> de nuestros objetos de negocio con las APIs del framework.</p></li>
+<li><p><strong>Mediante configuración</strong>, el contenedor es capaz de instanciar las dependencias que tiene un objeto definidas, para devolverlo ante un petición totalmente configurado, en tiempo de ejecución.</p></li>
+</ul>
+</section><section id="esquema-1" class="slide level2">
+<h2><span class="header-section-number">4.3</span> Esquema</h2>
+<ul>
+<li>En definitiva Spring es un contenedor ligero de <strong>POJOs</strong> que se encarga de su creación mediante Inversión de Control e Inyección de Dependencias.</li>
+</ul>
+<figure>
+<img src="../img/spring-container.png" alt="Spring Container" /><figcaption>Spring Container</figcaption>
+</figure>
+</section><section id="otros-aspectos" class="slide level2">
+<h2><span class="header-section-number">4.4</span> Otros aspectos</h2>
+<ul>
+<li>Soporte para Aspectos e integración con AspectJ</li>
+<li>Manejo de Transaccionalidad</li>
+<li>Clases que recubren el uso de JDBC, Hibernate, iBatis, JPA, etc.</li>
+<li>Manejo de JMX, JMS, JavaMail</li>
+<li>Seguridad avanzada</li>
+<li>Capa Web
+<ul>
+<li>Implementación del MVC</li>
+<li>Flujos Web</li>
+<li>Webflow API</li>
+<li>Servicios Web</li>
+</ul></li>
+</ul>
+</section>
+<section id="applicationcontext" class="titleslide slide level1"><h1><span class="header-section-number">5</span> ApplicationContext</h1></section><section id="utilidad" class="slide level2">
+<h2><span class="header-section-number">5.1</span> Utilidad</h2>
+<ul>
+<li><p>Es una interfaz que está en el paquete <strong>org.springframework.context</strong>.</p></li>
+<li><p>Carga la <strong>configuración</strong> del contenedor.</p></li>
+<li>Proporciona:
+<ul>
+<li>Factoría de beans, previamente configurados, realizando la inyección de dependencias.</li>
+<li>MessageSource, para internacionalización con i18n.</li>
+<li>Acceso a recursos, como URLs y ficheros.</li>
+<li>Propagación de eventos, para las beans que implementen ApplicationListener.</li>
+<li>Carga de múltiples contextos en jerarquía, permitiendo enfocar cada uno en cada capa.</li>
+</ul></li>
+</ul>
+</section><section id="implementaciones" class="slide level2">
+<h2><span class="header-section-number">5.2</span> Implementaciones</h2>
+<ul>
+<li><strong>ClassPathXmlApplicationContext</strong>
+<ul>
+<li>Carga el archivo de configuración desde un archivo XML que se encuentra en el classpath.</li>
+</ul></li>
+<li><strong>FileSystemXmlApplicationContext</strong>
+<ul>
+<li>Carga el archivo de configuración desde un archivo en el sistema de ficheros.</li>
+</ul></li>
+<li><strong>XmlWebApplicationContext</strong>
+<ul>
+<li>Carga el archivo de configuración desde un XML contenido dentro de una aplicación web.</li>
+</ul></li>
+</ul>
+</section><section id="instanciación-normal" class="slide level2">
+<h2><span class="header-section-number">5.3</span> Instanciación normal</h2>
+<ul>
+<li>Si no estamos en una aplicación web, se puede buscar el recurso desde el <strong>classpath</strong>:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">ApplicationContext appContext = <span class="kw">new</span> <span class="fu">ClassPathXmlApplicationContext</span>(<span class="st">&quot;appContext.xml&quot;</span>);</code></pre>
+<ul>
+<li>También se puede buscar el recurso desde el <strong>sistema de ficheros</strong>, en este caso relativo al directorio actual en el que nos encontremos:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">ApplicationContext ctx = <span class="kw">new</span> <span class="fu">FileSystemXmlApplicationContext</span>(<span class="st">&quot;appContext.xml&quot;</span>);</code></pre>
+</section><section id="instanciación-web" class="slide level2">
+<h2><span class="header-section-number">5.4</span> Instanciación web</h2>
+<ul>
+<li><p>En un entorno Web, podremos instanciar el ApplicationContext:</p>
+<ul>
+<li>mediante un <strong>listener</strong> para Contenedores Web que soporten Servlet 2.4,</li>
+<li>o mediante un servlet en un <strong>filtro</strong>, para versiones inferiores.</li>
+</ul></li>
+<li><p>El más empleado es el listener, <strong>ContextLoaderListener</strong>, que se configura en el web.xml del siguiente modo:</p></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;context-param&gt;</span>
+  <span class="kw">&lt;param-name&gt;</span>contextConfigLocation<span class="kw">&lt;/param-name&gt;</span>
+  <span class="kw">&lt;param-value&gt;</span>/WEB-INF/applicationContext.xml<span class="kw">&lt;/param-value&gt;</span>
+<span class="kw">&lt;/context-param&gt;</span>
+
+<span class="kw">&lt;listener&gt;</span>
+  <span class="kw">&lt;listener-class&gt;</span>
+    org.springframework.web.context.ContextLoaderListener
+  <span class="kw">&lt;/listener-class&gt;</span>
+<span class="kw">&lt;/listener&gt;</span></code></pre>
+</section><section id="métodos-disponibles" class="slide level2">
+<h2><span class="header-section-number">5.5</span> Métodos disponibles</h2>
+<ul>
+<li><p>Una vez instanciada, la interfaz dispone de 6 métodos:</p>
+<ul>
+<li><strong>Boolean containsBean(String beanName)</strong>
+<ul>
+<li>Comprobar si existe definida una bean.</li>
+</ul></li>
+<li><strong>Object getBean(String name)</strong>
+<ul>
+<li>Recuperar una instancia de una bean.</li>
+</ul></li>
+<li><strong>Object getBean(String name, Class beanClass)</strong>
+<ul>
+<li>Recuperar una instancia, con el casting hecho ya a beanClass.</li>
+</ul></li>
+<li><strong>Class getType(String name)</strong>
+<ul>
+<li>Retorna el Class de la bean.</li>
+</ul></li>
+<li><strong>Boolean isSingleton(String beanName)</strong>
+<ul>
+<li>Devuelve true si esa bean es un singleton.</li>
+</ul></li>
+<li><strong>String[] getAliases(String beanName)</strong>
+<ul>
+<li>Devuelve los alias de la bean con ese nombre.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="fichero-de-configuración" class="slide level2">
+<h2><span class="header-section-number">5.6</span> Fichero de configuración</h2>
+<ul>
+<li><p>Dentro de la etiqueta <strong>&lt;beans&gt;</strong> definiremos una instancia de una clase con la etiqueta <strong>&lt;bean&gt;</strong>.</p></li>
+<li>Tienen los siguientes atributos:
+<ul>
+<li><strong>Id</strong>: identifcador único de la bean en el contenedor.</li>
+<li><strong>Name</strong>: para nombrar una bean de varias maneras.</li>
+<li><strong>Alias</strong>: renombra una definición existente.</li>
+<li><strong>Class</strong>: la clase que implementará la bean.</li>
+</ul></li>
+</ul>
+</section><section id="instanciación-de-objetos" class="slide level2">
+<h2><span class="header-section-number">5.7</span> Instanciación de objetos</h2>
+<ul>
+<li>Con <strong>constructor</strong> (por defecto): Se suele usar un constructor sin parámetros pero también se pueden utilizar.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;exampleBean1&quot;</span><span class="ot"> class=</span><span class="st">&quot;examples.ExampleBean1&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;constructor-arg</span><span class="ot"> index=</span><span class="st">&quot;0&quot;</span><span class="ot"> value=</span><span class="st">&quot;This is a String constructor parameter&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;constructor-arg</span><span class="ot"> index=</span><span class="st">&quot;1&quot;</span><span class="ot"> value=</span><span class="st">&quot;33&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Con <strong>factoría estática</strong>: Un método estático en el bean defindo en el atributo factory-method.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;exampleBean&quot;</span><span class="ot"> class=</span><span class="st">&quot;examples.ExampleBean2&quot;</span><span class="ot"> factory-method=</span><span class="st">&quot;createInstance&quot;</span> <span class="kw">/&gt;</span></code></pre>
+<ul>
+<li>Con <strong>factoría instanciada</strong>: Una clase definida en el atributo factory-bean es la que instancia las demás.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;myFactoryBean&quot;</span><span class="ot"> class=</span><span class="st">&quot;...&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;example1&quot;</span><span class="ot"> factory-bean=</span><span class="st">&quot;myFactoryBean&quot;</span><span class="ot"> factory-method=</span><span class="st">&quot;createInstance&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section>
+<section id="inyección-de-dependencias-1" class="titleslide slide level1"><h1><span class="header-section-number">6</span> Inyección de dependencias</h1></section><section id="definición" class="slide level2">
+<h2><span class="header-section-number">6.1</span> Definición</h2>
+<ul>
+<li>Las dependencias se crean cuando <strong>un bean necesita otro bean</strong> para desempeñar sus funciones.</li>
+<li>Las inyecciones de dependencias pueden establecerse por setter o como argumento del constructor.</li>
+<li>Se recomienda el uso de <strong>setters</strong>:
+<ul>
+<li>Una dependencia en una clase de negocio tendrá un <strong>atributo privado</strong> de ese tipo</li>
+<li>y un <strong>setter público</strong> que lo establece.</li>
+</ul></li>
+<li>Las dependencias pueden ser de 2 tipos:
+<ul>
+<li><strong>valores</strong>: Se especifica un valor, ya sea numérico, de texto, etc.</li>
+<li><strong>otros beans</strong>: Se especifica otro bean definido en el appContext.xml.</li>
+</ul></li>
+</ul>
+</section><section id="inyección-de-valores" class="slide level2">
+<h2><span class="header-section-number">6.2</span> Inyección de valores</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;beans</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.springframework.org/schema/beans&quot;</span>
+<span class="ot">  xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+<span class="ot">  xmlns:p=</span><span class="st">&quot;http://www.springframework.org/schema/p&quot;</span>
+<span class="ot">  xsi:schemaLocation=</span><span class="st">&quot;http://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;plantillaPerosona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;Pepe&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;edad&quot;</span><span class="ot"> value=</span><span class="st">&quot;33&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/bean&gt;</span>
+
+<span class="kw">&lt;/beans&gt;</span></code></pre>
+</section><section id="inyección-de-otros-beans" class="slide level2">
+<h2><span class="header-section-number">6.3</span> Inyección de otros beans</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;beans</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.springframework.org/schema/beans&quot;</span>
+<span class="ot">       xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+<span class="ot">       xsi:schemaLocation=</span><span class="st">&quot;http://www.springframework.org/schema/beans</span>
+<span class="st">           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;plantillaDireccion&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Direccion&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;calle&quot;</span><span class="ot"> value=</span><span class="st">&quot;Alcalá&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;numero&quot;</span><span class="ot"> value=</span><span class="st">&quot;22&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/bean&gt;</span>
+
+  <span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;plantillaPersona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;Pepe&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;direccion&quot;</span><span class="ot"> ref=</span><span class="st">&quot;plantillaDireccion&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;/bean&gt;</span>
+
+<span class="kw">&lt;/beans&gt;</span></code></pre>
+</section><section id="inyección-de-un-inner-bean" class="slide level2">
+<h2><span class="header-section-number">6.4</span> Inyección de un inner bean</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;?xml</span> version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;<span class="kw">?&gt;</span>
+<span class="kw">&lt;beans</span><span class="ot"> xmlns=</span><span class="st">&quot;http://www.springframework.org/schema/beans&quot;</span>
+<span class="ot">       xmlns:xsi=</span><span class="st">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span>
+<span class="ot">       xsi:schemaLocation=</span><span class="st">&quot;http://www.springframework.org/schema/beans</span>
+<span class="st">           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd&quot;</span><span class="kw">&gt;</span>
+
+  <span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;plantillaPersona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;Pepe&quot;</span> <span class="kw">/&gt;</span>
+    <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;direccion&quot;</span><span class="kw">&gt;</span>
+      <span class="kw">&lt;bean</span><span class="ot"> class=</span><span class="st">&quot;beans.Direccion&quot;</span><span class="kw">&gt;</span>
+        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;calle&quot;</span><span class="ot"> value=</span><span class="st">&quot;Alcalá&quot;</span> <span class="kw">/&gt;</span>
+        <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;numero&quot;</span><span class="ot"> value=</span><span class="st">&quot;22&quot;</span> <span class="kw">/&gt;</span>
+      <span class="kw">&lt;/bean&gt;</span>
+    <span class="kw">&lt;property/&gt;</span>
+  <span class="kw">&lt;/bean&gt;</span>
+
+<span class="kw">&lt;/beans&gt;</span></code></pre>
+</section><section id="inyección-de-colecciones" class="slide level2">
+<h2><span class="header-section-number">6.5</span> Inyección de colecciones</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;list&gt;</span>
+  <span class="kw">&lt;value&gt;</span>un texto que representa un item de la lista, seguido por una referencia<span class="kw">&lt;/value&gt;</span>
+  <span class="kw">&lt;ref</span><span class="ot"> bean=</span><span class="st">&quot;myDataSource&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/list&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;set&gt;</span>
+  <span class="kw">&lt;value&gt;</span>otro texto, seguido también por una referencia<span class="kw">&lt;/value&gt;</span>
+  <span class="kw">&lt;ref</span><span class="ot"> bean=</span><span class="st">&quot;myDataSource&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/set&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;map&gt;</span>
+  <span class="kw">&lt;entry</span><span class="ot"> key=</span><span class="st">&quot;JUAN&quot;</span><span class="ot"> value=</span><span class="st">&quot;un texto para la clave JUAN&quot;</span> <span class="kw">/&gt;</span>
+  <span class="kw">&lt;entry</span><span class="ot"> key=</span><span class="st">&quot;PEPE&quot;</span><span class="ot"> value-ref=</span><span class="st">&quot;miPersona&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/map&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="co">&lt;!--java.util.Properties.--&gt;</span>
+<span class="kw">&lt;props&gt;</span>
+  <span class="kw">&lt;prop</span><span class="ot"> key=</span><span class="st">&quot;adm&quot;</span><span class="kw">&gt;</span>administrator@somecompany.org<span class="kw">&lt;/prop&gt;</span>
+<span class="kw">&lt;/props&gt;</span></code></pre>
+</section><section id="inyección-de-nulos-y-cadenas-vacías" class="slide level2">
+<h2><span class="header-section-number">6.6</span> Inyección de nulos y cadenas vacías</h2>
+<ul>
+<li>Cadena vacía:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> class=</span><span class="st">&quot;ExampleBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Valor nulo:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> class=</span><span class="st">&quot;ExampleBean&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;email&quot;</span><span class="kw">&gt;&lt;null/&gt;&lt;/property&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+</section><section id="dependencias-indirectas" class="slide level2">
+<h2><span class="header-section-number">6.7</span> Dependencias indirectas</h2>
+<ul>
+<li>Cuando no existe dependencia, pero se necesita que un bean esté instanciado antes que otro, deberemos usar el atributo <strong>depends-on=&quot;nombreDelBean&quot;</strong></li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;beanOne&quot;</span><span class="ot"> class=</span><span class="st">&quot;ExampleBean&quot;</span><span class="ot"> depends-on=</span><span class="st">&quot;manager&quot;</span> <span class="kw">/&gt;</span>
+
+<span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;manager&quot;</span><span class="ot"> class=</span><span class="st">&quot;ManagerBean&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section><section id="herencias" class="slide level2">
+<h2><span class="header-section-number">6.8</span> Herencias</h2>
+<ul>
+<li>La etiqueta <bean> provee 2 atributos para utilizar la herencia:
+<ul>
+<li><strong>parent</strong>: Indica el id del bean que se utilizará como padre. Concepto similar al extends en las clases Java.</li>
+<li><strong>abstract</strong>: Si es &quot;true&quot; indica que el bean declarado es abstracto, es decir, sólo se podrán instanciar sus hijos.</li>
+</ul></li>
+<li>En el siguiente ejemplo el bean &quot;julio&quot;, hereda del bean &quot;personaGenerica&quot;, y sobreescribe el valor de la propiedad &quot;nombre&quot;.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;personaGenerica&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="ot"> abstract=</span><span class="st">&quot;true&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="kw">&gt;&lt;null</span> <span class="kw">/&gt;&lt;/property&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;cp&quot;</span><span class="ot"> value=</span><span class="st">&quot;28001&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;julio&quot;</span><span class="ot"> parent=</span><span class="st">&quot;personaGenerica&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;Julio&quot;</span> <span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+</section>
+<section id="autowiring" class="titleslide slide level1"><h1><span class="header-section-number">7</span> Autowiring</h1></section><section id="definición-1" class="slide level2">
+<h2><span class="header-section-number">7.1</span> Definición</h2>
+<ul>
+<li><p>Consiste en la <strong>inyección de dependencias automática</strong> sin necesidad de indicarla en la configuración de una bean.</p></li>
+<li>Spring proporciona <strong>4 tipos</strong> de autowiring:
+<ul>
+<li>Por nombre (byName)</li>
+<li>Por tipo (byType)</li>
+<li>Por constructor (constructor)</li>
+<li>Autodetectado (autodetect)</li>
+</ul></li>
+</ul>
+</section><section id="autowiring-byname" class="slide level2">
+<h2><span class="header-section-number">7.2</span> Autowiring: byName</h2>
+<ul>
+<li>El contenedor busca un bean cuyo <strong>nombre (id)</strong> sea el mismo que el nombre de la propiedad.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;persona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="ot"> autowire=</span><span class="st">&quot;byName&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;persona&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span>
+
+<span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;direccion&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Direccion&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;cp&quot;</span><span class="ot"> value=</span><span class="st">&quot;28900&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Si no se encuentra coincidencia la propiedad se devolverá sin dependencia.</li>
+</ul>
+</section><section id="autowiring-bytype" class="slide level2">
+<h2><span class="header-section-number">7.3</span> Autowiring: byType</h2>
+<ul>
+<li>El contenedor busca un único bean cuyo <strong>tipo (class)</strong> coincida con el tipo de la propiedad a inyectar.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;persona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="ot"> autowire=</span><span class="st">&quot;byType&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;persona&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span>
+
+<span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;direccion&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Direccion&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;cp&quot;</span><span class="ot"> value=</span><span class="st">&quot;28900&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Si no se encuentra coincidencia la propiedad se devolverá sin dependencia.</li>
+<li>Si se encuentra más de una coincidencia el contenedor lanzará una excepción del tipo
+<ul>
+<li><strong>org.springframework.beans.factory.UnsatisfiedDependencyException</strong></li>
+</ul></li>
+</ul>
+</section><section id="autowiring-constructor" class="slide level2">
+<h2><span class="header-section-number">7.4</span> Autowiring: constructor</h2>
+<ul>
+<li>El contenedor busca algun bean que contenga un <strong>constructor con el tipo</strong> del bean que se quiere inyectar.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;persona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="ot"> autowire=</span><span class="st">&quot;constructor&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;persona&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<pre class="sourceCode java"><code class="sourceCode java"><span class="kw">public</span> <span class="fu">Persona</span>(Direccion dir){
+  <span class="kw">this</span>.<span class="fu">direccion</span> = dir;
+}</code></pre>
+<ul>
+<li>Si no se encuentra coincidencia la propiedad se devolverá sin dependencia.</li>
+<li>Si se encuentra más de una coincidencia el contenedor lanzará una excepción del tipo
+<ul>
+<li><strong>org.springframework.beans.factory.UnsatisfiedDependencyException</strong></li>
+</ul></li>
+</ul>
+</section><section id="autowiring-autodetect" class="slide level2">
+<h2><span class="header-section-number">7.5</span> Autowiring: autodetect</h2>
+<ul>
+<li>Spring intenta realizar el autowiring <strong>por constructor y si no por tipo</strong>.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;persona&quot;</span><span class="ot"> class=</span><span class="st">&quot;beans.Persona&quot;</span><span class="ot"> autowire=</span><span class="st">&quot;autodetect&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;nombre&quot;</span><span class="ot"> value=</span><span class="st">&quot;persona&quot;</span><span class="kw">/&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li>Si no se encuentra coincidencia la propiedad se devolverá sin dependencia.</li>
+<li>Si se encuentra más de una coincidencia el contenedor lanzará una excepción del tipo
+<ul>
+<li><strong>org.springframework.beans.factory.UnsatisfiedDependencyException</strong></li>
+</ul></li>
+</ul>
+</section><section id="resumen" class="slide level2">
+<h2><span class="header-section-number">7.6</span> Resumen</h2>
+<ul>
+<li>Autowiring parece una <strong>poderosa herramienta</strong> de configuración pero impone algunas <strong>restricciones</strong>.
+<ul>
+<li>Por tipo y constructor obliga a tener un único bean definido que satisfaga el wiring.</li>
+<li>Por nombre tiene problemas de refactorización.</li>
+<li>Los plugins no documentan correctamente el autowiring.</li>
+</ul></li>
+<li><p>Autowiring <strong>funciona bien cuando es usado de forma habitual</strong> en todo el proyecto.</p></li>
+<li><p>Si el autowiring no se utiliza de forma generalizada, <strong>puede ser confuso</strong> para los desarrolladores.</p></li>
+</ul>
+</section>
+<section id="scopes" class="titleslide slide level1"><h1><span class="header-section-number">8</span> Scopes</h1></section><section id="singleton-scope" class="slide level2">
+<h2><span class="header-section-number">8.1</span> Singleton Scope</h2>
+<ul>
+<li><p>Es el scope que se utiliza <strong>por defecto</strong>.</p></li>
+<li><p>Se crea <strong>una instancia única</strong> por JVM.</p></li>
+</ul>
+<figure>
+<img src="../img/spring-scope-singleton.png" alt="Singleton Scope" /><figcaption>Singleton Scope</figcaption>
+</figure>
+</section><section id="prototype-scope" class="slide level2">
+<h2><span class="header-section-number">8.2</span> Prototype Scope</h2>
+<ul>
+<li><p>Se crea <strong>una nueva instancia cada vez</strong> que se pide el bean.</p></li>
+<li><p>Se utiliza el atributo <strong>scope=&quot;prototype&quot;</strong></p></li>
+</ul>
+<figure>
+<img src="../img/spring-scope-prototype.png" alt="Prototype Scope" /><figcaption>Prototype Scope</figcaption>
+</figure>
+</section><section id="web-application-scopes" class="slide level2">
+<h2><span class="header-section-number">8.3</span> Web Application Scopes</h2>
+<ul>
+<li><strong>Request</strong>
+<ul>
+<li>Una instancia por petición http.</li>
+</ul></li>
+<li><strong>Session</strong>
+<ul>
+<li>Una instancia por sesión http.</li>
+</ul></li>
+<li><strong>GlobalSession</strong>
+<ul>
+<li>Una instancia por sesión http en Portlets.</li>
+</ul></li>
+</ul>
+<p><strong>Nota</strong>: Si un bean de tipo singleton tiene una dependencia de otro bean de ámbito session o request, deberá indicarse que esa dependencia se creará a través de un proxy, con la etiqueta <strong>&lt;aop:scoped-proxy/&gt;</strong></p>
+</section><section id="carga-perezosa" class="slide level2">
+<h2><span class="header-section-number">8.4</span> Carga perezosa</h2>
+<ul>
+<li><p>Spring instancia los singleton cuando el archivo de configuración se carga.</p></li>
+<li><p>Es una buena práctica aunque puede causar problemas.</p></li>
+<li><p>Mediante el atributo <strong>lazy-init=&quot;true&quot;</strong> podemos indicarle al contenedor que no cargue el bean hasta que se pida por primera vez.</p></li>
+</ul>
+</section>
+<section id="ciclo-de-vida" class="titleslide slide level1"><h1><span class="header-section-number">9</span> Ciclo de vida</h1></section><section id="gestión-por-configuración" class="slide level2">
+<h2><span class="header-section-number">9.1</span> Gestión por configuración</h2>
+<ul>
+<li><p>Es posible controlar el ciclo de vida de una bean configurada en el contenedor IoC, mediante unos <strong>métodos de inicialización y de destrucción</strong> de la bean.</p></li>
+<li><p>Estos métodos deben existir en la bean, y puede indicarse al contenedor que los invoque en los momentos indicados, con los atributos <strong>init-method=&quot;&quot;</strong> y <strong>destroy-method=&quot;&quot;</strong>.</p></li>
+<li><p>Se puede definir en la etiqueta <strong>&lt;beans/&gt;</strong> con <strong>default-init-method=&quot;&quot;</strong> y <strong>default-destroy-method=&quot;&quot;</strong> los métodos que se intentará invocar en todas las beans configuradas, si existen dichos métodos.</p></li>
+</ul>
+</section><section id="gestión-con-interfaces" class="slide level2">
+<h2><span class="header-section-number">9.2</span> Gestión con interfaces</h2>
+<ul>
+<li><p>Existen 2 interfaces que nos permiten manejar el ciclo de vida de una bean de la misma forma que con init-method y destroy-method:</p>
+<ul>
+<li><strong>InitializingBean</strong>
+<ul>
+<li>Obliga a la clase que la implemente a implementar el método <strong>afterPropertiesSet()</strong> que será llamado después de que todas las propiedades de la bean hayan sido configuradas.</li>
+</ul></li>
+<li><strong>DisposableBean</strong>
+<ul>
+<li>Obliga a implementar el método <strong>destroy()</strong> que será llamado justo antes de destruir la bean por el contenedor.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="destrucción-del-contenedor-ioc" class="slide level2">
+<h2><span class="header-section-number">9.3</span> Destrucción del contenedor IoC</h2>
+<ul>
+<li>Cuando no se esté en un contexto Web, la destrucción del contendor IoC se deberá registar invocando el método <strong>registerShutdownHook()</strong> en el AbstractBeanFactory.</li>
+</ul>
+</section>
+<section id="i18n" class="titleslide slide level1"><h1><span class="header-section-number">10</span> i18n</h1></section><section id="messagesource" class="slide level2">
+<h2><span class="header-section-number">10.1</span> MessageSource</h2>
+<ul>
+<li><p>ApplicationContext extiende una interfaz llamada MessageSource, que proporciona los métodos:</p>
+<ul>
+<li><strong>String getMessage(String code, Object[] args, String default, Locale loc)</strong>:
+<ul>
+<li>Método básico para recuperar un mensaje del MessageSource.</li>
+<li>Si no se encuentra un mensaje, se usa el default.</li>
+</ul></li>
+<li><strong>String getMessage(String code, Object[] args, Locale loc)</strong>:
+<ul>
+<li>Similar pero sin mensaje por defecto.</li>
+</ul></li>
+<li><strong>String getMessage(MessageSourceResolvable resolvable, Locale locale)</strong>:
+<ul>
+<li>En este caso, MessageSourceResolvable, agrupa los argumentos de los métodos anteriores.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="configuración" class="slide level2">
+<h2><span class="header-section-number">10.2</span> Configuración</h2>
+<ul>
+<li><p>Cuando un ApplicationContext se carga, automáticamente busca el <strong>bean llamado messageSource</strong> definida en el fichero de configuración.</p></li>
+<li><p>Si se encuentra, todas las llamadas a los métodos anteriores se delegan sobre ella.</p></li>
+<li><p>Spring proporciona 2 implementaciones de MessageSource, <strong>ResourceBundleMessageSource</strong> y <strong>StaticMessageSource</strong>.</p></li>
+<li><p>El más usado es el primero, que permite definir las ubicaciones de los ficheros .properties que se van a utilizar.</p></li>
+</ul>
+</section><section id="ejemplo-de-configuración" class="slide level2">
+<h2><span class="header-section-number">10.3</span> Ejemplo de configuración</h2>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;bean</span><span class="ot"> id=</span><span class="st">&quot;messageSource&quot;</span>
+<span class="ot">      class=</span><span class="st">&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;</span><span class="kw">&gt;</span>
+  <span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;basenames&quot;</span><span class="kw">&gt;</span>
+    <span class="kw">&lt;list&gt;</span>
+      <span class="kw">&lt;value&gt;</span>format<span class="kw">&lt;/value&gt;</span>
+      <span class="kw">&lt;value&gt;</span>exceptions<span class="kw">&lt;/value&gt;</span>
+    <span class="kw">&lt;/list&gt;</span>
+  <span class="kw">&lt;/property&gt;</span>
+<span class="kw">&lt;/bean&gt;</span></code></pre>
+<ul>
+<li><p>En este caso, deberemos tener 2 ficheros en el raíz del classpath, con los nombres <strong>format.properties</strong> y <strong>exceptions.properties</strong>.</p></li>
+<li><p>Admite el resto de ficheros con los sufijos de locale para internacionalización.</p></li>
+</ul>
+</section><section id="ejemplo-de-uso" class="slide level2">
+<h2><span class="header-section-number">10.4</span> Ejemplo de uso</h2>
+<ul>
+<li>En código java:</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">MessageSource resources = <span class="kw">new</span> <span class="fu">ClassPathXmlApplicationContext</span>(<span class="st">&quot;beans.xml&quot;</span>);
+Locale locale = ...; <span class="co">//Locale correspondiente</span>
+Integer id = ...; <span class="co">// id del usuario</span>
+String text = resources.<span class="fu">getMessage</span>(<span class="st">&quot;usuario.id&quot;</span>, <span class="kw">new</span> Object[id], <span class="st">&quot;Mensaje por defecto&quot;</span>, locale);</code></pre>
+<ul>
+<li>En una JSP, mediante la librería de etiquetas proporcionada por Spring:</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;spring:message</span><span class="ot"> code=</span><span class="st">&quot;usuario.id&quot;</span> <span class="kw">/&gt;</span></code></pre>
+</section>
+<section id="eventos" class="titleslide slide level1"><h1><span class="header-section-number">11</span> Eventos</h1></section><section id="eventos-de-spring" class="slide level2">
+<h2><span class="header-section-number">11.1</span> Eventos de Spring</h2>
+<ul>
+<li><p>El manejo de eventos se proporciona a través de la clase <strong>ApplicationEvent</strong> y la interfaz <strong>ApplicationListener</strong>.</p></li>
+<li><p>Si un bean implementa ApplicationListener, cada vez que se publica un ApplicationEvent en el ApplicationContext, el bean es notificada.</p></li>
+<li>Hay 3 eventos proporcionados por Spring:
+<ul>
+<li><strong>ContextRefreshedEvent</strong>: Evento publicado cuando el ApplicationContext se inicializa o refresca.</li>
+<li><strong>ContextClosedEvent</strong>: Evento publicado cuando se cierra el ApplicationContext.</li>
+<li><strong>RequestHandledEvent</strong>: Evento específico para aplicaciones web que avisa que todos los beans de una petición HTTP han sido servidos.</li>
+</ul></li>
+</ul>
+</section><section id="eventos-personalizados" class="slide level2">
+<h2><span class="header-section-number">11.2</span> Eventos personalizados</h2>
+<ul>
+<li><p>Se pueden implementar eventos personalizado simplemente llamando al método <strong>publishEvent()</strong> de ApplicationContext, pasando como parámetro una instancia de una clase personalizada que implemente ApplicationEvent.</p></li>
+<li><p>Cuando un listener (ApplicationListener) recibe una notificación de un evento, se invoca su método <strong>onApplicationEvent()</strong>, al que se le pasa el evento, donde realizaremos la acción pertinente.</p></li>
+<li><p>Dichos listener reciben los eventos <strong>de forma síncrona</strong>, bloqueándose hasta terminar de procesar el evento.</p></li>
+</ul>
+</section>
+<section id="acceso-a-recursos" class="titleslide slide level1"><h1><span class="header-section-number">12</span> Acceso a recursos</h1></section><section id="resourceloader" class="slide level2">
+<h2><span class="header-section-number">12.1</span> ResourceLoader</h2>
+<ul>
+<li><p>Como en otros frameworks, Spring nos ofrece un acceso sencillo a los recursos que necesitemos.</p></li>
+<li><p>Para ello, un ApplicationContext, es también un <strong>ResourceLoader</strong>, que nos proporciona la capacidad de cargar recursos.</p></li>
+<li><p>Un recurso es fundamentalmente un <strong>java.net.URL</strong>, que puede usarse para recuperar recursos de casi cualquier ubicación de forma transparente.</p></li>
+<li><p>Un bean desplegado en el ApplicationContext, puede acceder a recursos implementando la interfaz <strong>ResourceLoaderAware</strong>, para que se le pase durante la inicialización el ApplicationContext, en forma de ResourceLoader, con <strong>setResourceLoader()</strong>.</p></li>
+</ul>
+</section><section id="resource" class="slide level2">
+<h2><span class="header-section-number">12.2</span> Resource</h2>
+<ul>
+<li><p>La interfaz Resource, proporciona los siguientes métodos:</p>
+<ul>
+<li><strong>InputStream getInputStream() throws IOException</strong>:
+<ul>
+<li>Localiza y abre el recurso para leer. Debe cerrarse el inputStream obtenido.</li>
+</ul></li>
+<li><strong>boolean exists()</strong>:
+<ul>
+<li>Indica si el recurso existe físicamente.</li>
+</ul></li>
+<li><strong>boolean isOpen()</strong>:
+<ul>
+<li>Indica si el recurso está abierto.</li>
+</ul></li>
+<li><strong>URL getURL() throws IOException</strong>:
+<ul>
+<li>Retorna la URL del recurso.</li>
+</ul></li>
+<li><strong>File getFile() throws IOException</strong>;
+<ul>
+<li>Retorna un objeto de tipo File que encapsula el recurso.</li>
+</ul></li>
+<li><strong>Resource createRelative(String relativePath) throws IOException</strong>:
+<ul>
+<li>Crea un recurso relativo en la misma ubicación que el actual.</li>
+</ul></li>
+<li><strong>String getFilename()</strong>;
+<ul>
+<li>Devuelve el nombre del recurso.</li>
+</ul></li>
+<li><strong>String getDescription()</strong>:
+<ul>
+<li>Devuelve una descripción del recurso.</li>
+</ul></li>
+</ul></li>
+</ul>
+</section><section id="implementaciones-de-resource" class="slide level2">
+<h2><span class="header-section-number">12.3</span> Implementaciones de Resource</h2>
+<ul>
+<li><p>En Spring están disponibles varias implementaciones de Resource:</p></li>
+<li><strong>URLResource</strong>:
+<ul>
+<li>Encapsula un <strong>java.net.URL</strong>, y permite acceder a ficheros que pueden representarse por su URL, con el prefijo correspondiente, <strong>file:</strong>, <strong>http:</strong>, <strong>ftp:</strong>, etc..</li>
+</ul></li>
+<li><strong>ClassPathResource</strong>:
+<ul>
+<li>Indica un recurso que puede obtenerse del ClassPath. Puede indicarse el tipo con el prefijo <strong>classpath:</strong></li>
+</ul></li>
+<li><strong>FileSystemResource</strong>:
+<ul>
+<li>Encapsula un <strong>java.io.File</strong>.</li>
+</ul></li>
+<li><strong>ServletContextResource</strong>:
+<ul>
+<li>Interpreta rutas relativas desde la raíz de la aplicación web.</li>
+</ul></li>
+</ul>
+</section><section id="resourceloader-1" class="slide level2">
+<h2><span class="header-section-number">12.4</span> ResourceLoader</h2>
+<ul>
+<li>ApplicationContext hereda de ResourceLoader, que proporciona el método <strong>getResource(String location)</strong>, con el que se accede a los recursos.</li>
+</ul>
+<pre class="sourceCode java"><code class="sourceCode java">Resource template = ctx.<span class="fu">getResource</span>(<span class="st">&quot;file:/some/resource/path/myTemplate.txt&quot;</span>);</code></pre>
+<ul>
+<li>También se pueden definir recuros como dependencias en el fichero de configuración.</li>
+</ul>
+<pre class="sourceCode xml"><code class="sourceCode xml"><span class="kw">&lt;property</span><span class="ot"> name=</span><span class="st">&quot;template&quot;</span><span class="ot"> value=</span><span class="st">&quot;classpath:some/resource/path/myTemplate.txt&quot;</span><span class="kw">&gt;</span></code></pre>
+<ul>
+<li><p>El String pasado (<strong>location</strong>), se convierte a la implementación de Resource más adecuada.</p></li>
+<li><p>Si se indica un <strong>prefijo de URL</strong>, dependiendo del prefijo, se devolverá una instancia u otra.</p></li>
+<li><p>Si no se indica el prefijo, se nos devolverá una implementación acorde al tipo de ApplicationContext que hayamos creado:</p>
+<ul>
+<li><p>ClassPathXmlApplicationContext: ClassPathResource.</p></li>
+<li><p>FileSystemXmlApplicationContext: FileSystemResource</p></li>
+<li><p>WebApplicationContext: ServletContextResource</p></li>
+</ul></li>
+</ul>
+</section>
+
+<!--footer id="footer">
+  <h4 class="author"> Adolfo Sanz De Diego  - Noviembre 2013</h4>
+</footer-->
+
+<!-- deck goto extension html -->
+<form action="." method="get" class="goto-form">
+  <label for="goto-slide">Go to slide:</label>
+  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+  <datalist id="goto-datalist"></datalist>
+  <input type="submit" value="Go">
+</form>
+
+<!-- deck hash extension html -->
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+<!-- deck navigation extension html -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<!-- deck status extension html -->
+<p class="deck-status">
+  <span class="deck-status-current"></span> / <span class="deck-status-total"></span>
+</p>
+
+<!-- deck core js  -->
+<script src="./js/jquery-1.7-min.js"></script>
+<script src="./js/deck-core.js"></script>
+
+<!-- deck extension js -->
+<script src="./js/deck-extension/goto.js"></script>
+<script src="./js/deck-extension/hash.js"></script>
+<script src="./js/deck-extension/menu.js"></script>
+<script src="./js/deck-extension/navigation.js"></script>
+<script src="./js/deck-extension/status.js"></script>
+<script src="./js/deck-extension/search.js"></script>
+<script src="./js/deck-extension/pointer.js"></script>
+
+<!-- Initialize the deck. -->
+<script src="./js/init-deck.js"></script>
+
+</body>
+</html>

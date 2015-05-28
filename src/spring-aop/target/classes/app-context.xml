@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+		<description>Example configuration to get you started.</description>
+
+		<context:component-scan base-package="asanzdiego.spring.aop" />
+
+		<!-- TARGET -->
+		<bean id="myPerson" class="asanzdiego.spring.aop.Person">
+				<property name="name" value="jose" />
+				<property name="age" value="16" />
+		</bean>
+		<bean id="myPet" class="asanzdiego.spring.aop.Pet">
+				<property name="name" value="luky" />
+				<property name="age" value="16" />
+		</bean>
+
+		<!-- PROXY -->
+		<bean id="myPersonProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+				<property name="target" ref="myPerson" />
+				<property name="interceptorNames" value="myPointcut" />
+				<property name="proxyTargetClass" value="true" />
+		</bean>
+		<bean id="myPetProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+				<property name="target" ref="myPet" />
+				<property name="interceptorNames" value="myPointcut" />
+				<property name="proxyTargetClass" value="true" />
+		</bean>
+
+		<!-- POINTCUT -->
+		<bean id="myPointcut"
+				class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+				<property name="advice" ref="myAdvice" />
+				<property name="pattern" value=".*setAge.*" />
+		</bean>
+
+		<!-- ADVICE -->
+		<bean id="myAdvice" class="asanzdiego.spring.aop.Advice" />
+
+</beans>
